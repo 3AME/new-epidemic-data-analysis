@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<script>
+    //AJAX 加载月活跃数
+    var xmlHttp = new XMLHttpRequest();
+
+    xmlHttp.onreadystatechange = function (ev) {
+        if(xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+            var rep = JSON.parse(xmlHttp.responseText);
+
+            var months = [];
+            var totals = [];
+            for(var i = 0; i < rep.length; i++) {
+                months.push(rep[i].month + '月');
+                totals.push(rep[i].total);
+            }
+
+            var chart = echarts.init(document.getElementById("main"));
+            var option = {
+                title: {
+                    text: '月度用户活跃数'
+                },
+                legend: {
+                    data: ["活跃数"]
+                },
+                xAxis: {
+                    data: months
+                },
+                yAxis: {},
+                series: [{
+                    name: '活跃数',
+                    type: 'bar',
+                    data: totals
+                }]
+            }
+            chart.setOption(option)
+        }
+    }
+    xmlHttp.open('GET', '/uv/month', true)
+    xmlHttp.send();
+
+</script>
+</body>
+</html>
