@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetData</title>
+</head>
+<body>
+数据
+
+<!--<div id="main" style="width: 600px;height: 400px"></div>-->
+<script>
+    //用Ajax获得数据
+    // var monthdata = {};
+    var data = [];
+    var xmlHTTP = new XMLHttpRequest();
+
+    var temp1 = [];
+    var temp2 = [];
+    var flag = 0;
+    xmlHTTP.onreadystatechange = function (ev) {
+        if(xmlHTTP.readyState == 4 && xmlHTTP.status == 200){
+            var rep = JSON.parse(xmlHTTP.responseText);
+            for (var i=0;i<rep.length;i++){
+                if(rep[i].category==flag){
+                    temp1.push(rep[i].x);
+                    temp1.push(rep[i].y);
+                    temp1.push(rep[i].title);
+                    temp1.push(rep[i].category);
+                    temp2.push(temp1);
+                    temp1 = [];
+                }
+                else {
+                    flag = flag + 1;
+                    data.push(temp2);
+                    temp2 = [];
+                }
+            }
+            console.log(data);
+        }
+    }
+
+    xmlHTTP.open('GET','/uv/bigData',true);
+    xmlHTTP.send();
+
+</script>
+</body>
+</html>

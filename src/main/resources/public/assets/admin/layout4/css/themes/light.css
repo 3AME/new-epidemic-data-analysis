@@ -27,7 +27,7 @@ Page Header
 ***********/
 /* Header search bar, toggler button & top menu */
 .page-header.navbar {
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
   border-bottom: 1px solid #e9ecf3;
   /* Top notification menu/bar */
   /* Header seaech box */
@@ -211,6 +211,7 @@ Page Header
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
 .page-sidebar {
   background-color: #ffffff;
+  /* background-image: url(../../background/晶体状背景图片7.jpg); */
   /* Default sidebar */
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,

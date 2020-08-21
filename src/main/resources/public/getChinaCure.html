@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetData</title>
+</head>
+<body>
+数据
+
+<!--<div id="main" style="width: 600px;height: 400px"></div>-->
+<script>
+    //用Ajax获得数据
+    // var monthdata = {};
+    var days = [];
+    var country = [];
+    var data = [];
+    var xmlHTTP = new XMLHttpRequest();
+
+    var temp = [];
+    xmlHTTP.onreadystatechange = function (ev) {
+        if(xmlHTTP.readyState == 4 && xmlHTTP.status == 200){
+            var rep = JSON.parse(xmlHTTP.responseText);
+            for (var i=0;i<rep.length;i++){
+                if(days.indexOf(rep[i].date)== -1){
+                    days.push(rep[i].date);
+                }
+                if(country.indexOf(rep[i].name) == -1){
+                    country.push(rep[i].name);
+                }
+                temp.push(rep[i].value);
+                if(temp.length == 34){
+                    data.push(temp);
+                    temp = [];
+                }
+            }
+            console.log(days);
+            console.log(country);
+            console.log(data);
+        }
+    }
+
+    xmlHTTP.open('GET','/uv/chinaData',true);
+    xmlHTTP.send();
+
+</script>
+</body>
+</html>

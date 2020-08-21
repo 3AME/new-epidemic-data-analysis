@@ -1,9 +1,9 @@
  [TOC]  
 
 ## 系统页面说明
-  1. index.html 系统首页，可以作为整个系统的框架使用，在框架内填充内容即可
-  2. world_epidemic_situation.html 世界疫情分布
-  3. countries_epidemic_situation.html 国家疫情分布情况
+  1. index.html 系统Home，可以作为整个系统的框架使用，在框架内填充内容即可
+  2. world_epidemic_situation.html World epidemic situation
+  3. Analysis_and_forecasting.html Analysis and forecasting情况
   4. 其他html，暂时未建，对应index中的菜单跳转
 
 ## 模板相关说明

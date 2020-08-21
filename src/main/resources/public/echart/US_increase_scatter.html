@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ECharts</title>
+
+    <!-- 引入 echarts.js -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+    <div id="main" style="width: 1800px;height:900px;"></div>
+
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var weeks = ['week 1', 'week 2', 'week 3', 'week 4', 'week 5', 'week 6', 'week 7', 'week 8', 'week 9', 'week 10', 'week 11', 'week 12', 'week 13', 'week 14', 'week 15', 'week 16', 'week 17', 'week 18', 'week 19', 'week 20', 'week 21'];
+        var days = ['Saturday', 'Friday', 'Thursday',
+            'Wednesday', 'Tuesday', 'Monday', 'Sunday'];
+
+        var data = [[0, 0, 0], [1, 0, 0], [2, 0, 0], [3, 0, 0], [4, 0, 1], [5, 0, 0], [6, 0, 3], [0, 1, 0], [1, 1, 0], [2, 1, 0], [3, 1, 0], [4, 1, 2], [5, 1, 1], [6, 1, 0], [0, 2, 3], [1, 2, 0], [2, 2, 0], [3, 2, 0], [4, 2, 0], [5, 2, 0], [6, 2, 0], [0, 3, 0], [1, 3, 1], [2, 3, 0], [3, 3, 1], [4, 3, 0], [5, 3, 0], [6, 3, 0], [0, 4, 0], [1, 4, 0], [2, 4, 0], [3, 4, 0], [4, 4, 2], [5, 4, 0], [6, 4, 0], [0, 5, 36], [1, 5, 0], [2, 5, 6], [3, 5, 1], [4, 5, 2], [5, 5, 8], [6, 5, 6], [0, 6, 24], [1, 6, 20], [2, 6, 31], [3, 6, 68], [4, 6, 45], [5, 6, 140], [6, 6, 116], [0, 7, 65], [1, 7, 376], [2, 7, 322], [3, 7, 382], [4, 7, 516], [5, 7, 548], [6, 7, 772], [0, 8, 1133], [1, 8, 1789], [2, 8, 1362], [3, 8, 5894], [4, 8, 5423], [5, 8, 6389], [6, 8, 8355], [0, 9, 9819], [1, 9, 10073], [2, 9, 12042], [3, 9, 18058], [4, 9, 17821], [5, 9, 19808], [6, 9, 19444], [0, 10, 20922], [1, 10, 26341], [2, 10, 25200], [3, 10, 30227], [4, 10, 31987], [5, 10, 33267], [6, 10, 28219], [0, 11, 29595], [1, 11, 29556], [2, 11, 32829], [3, 11, 32385], [4, 11, 35098], [5, 11, 29861], [6, 11, 28917], [0, 12, 25306], [1, 12, 27051], [2, 12, 28680], [3, 12, 31451], [4, 12, 31905], [5, 12, 32491], [6, 12, 26889], [0, 13, 25240], [1, 13, 27539], [2, 13, 28355], [3, 13, 28950], [4, 13, 36163], [5, 13, 32821], [6, 13, 27629], [0, 14, 22414], [1, 14, 24385], [2, 14, 27327], [3, 14, 29515], [4, 14, 34037], [5, 14, 29078], [6, 14, 25501], [0, 15, 22335], [1, 15, 23976], [2, 15, 24252], [3, 15, 28420], [4, 15, 26906], [5, 15, 25621], [6, 15, 19710], [0, 16, 18621], [1, 16, 21693], [2, 16, 20832], [3, 16, 27368], [4, 16, 25050], [5, 16, 24996], [6, 16, 18937], [0, 17, 21551], [1, 17, 20260], [2, 17, 23285], [3, 17, 25294], [4, 17, 23790], [5, 17, 21675], [6, 17, 20634], [0, 18, 19056], [1, 18, 18611], [2, 18, 18263], [3, 18, 22577], [4, 18, 24266], [5, 18, 24146], [6, 18, 20007], [0, 19, 20848], [1, 19, 20801], [2, 19, 19699], [3, 19, 21140], [4, 19, 29972], [5, 19, 23133], [6, 19, 18115], [0, 20, 17548], [1, 20, 18061], [2, 20, 20975], [3, 20, 22883], [4, 20, 25639], [5, 20, 25540], [6, 20, 19532]];
+
+        data = data.map(function (item) {
+            return [item[1], item[0], item[2]];
+        });
+
+        option = {
+            title: {
+                text: '周新增情况',
+                // link: ''
+            },
+            // legend: {
+            //     data: ['Punch Card'],
+            //     left: 'right'
+            // },
+            tooltip: {
+                position: 'top',
+                formatter: function (params) {
+                    return params.value[2] + ' new cases ' + days[params.value[1]] + ' of ' + weeks[params.value[0]];
+                }
+            },
+            grid: {
+                // left: 2,
+                // bottom: 10,
+                // right: 10,
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                data: weeks,
+                boundaryGap: false,
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#999',
+                        type: 'dashed'
+                    }
+                },
+                axisLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: days,
+                axisLine: {
+                    show: false
+                }
+            },
+            series: [{
+                name: 'Punch Card',
+                type: 'scatter',
+                symbolSize: function (val) {
+                    return val[2]/500;
+                },
+                data: data,
+                animationDelay: function (idx) {
+                    return idx * 5;
+                }
+            }]
+        };
+        myChart.setOption(option);
+
+    </script>
+    <!-- <script src="USA.json?callback=USA"></script> -->
+
+</body>
+
+</html>

@@ -210,7 +210,8 @@ Page Header
 /* Page sidebar */
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover,
 .page-sidebar {
-  background-color: #ffffff;
+  background-color: rgb(186, 224, 45);
+  /* background-image: url(../../background/晶体状背景图片5.jpg); */
   /* Default sidebar */
 }
 .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu,

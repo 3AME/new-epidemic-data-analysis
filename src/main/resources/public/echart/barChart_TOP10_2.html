@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>barChart_top10_2</title>
+  <script type="text/javascript" src="js/echarts.min.js"></script>
+</head>
+
+<body>
+  <div id="main" style="width: 1200px;; height: 800px"></div>
+  <script>
+
+    var myChart = echarts.init(document.getElementById('main'));
+
+    var option = {
+      title: {
+        text: 'TOP10治愈率',
+        subtext: '感染人数过万的国家中排序'
+      },
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: {
+          type: 'shadow'
+        }
+      },
+      // legend: {
+      //   data: ['治愈率', '死亡率']
+      // },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      xAxis: {
+        type: 'value',
+        boundaryGap: [0, 0.01]
+      },
+      yAxis: {
+        type: 'category',
+        data: ['Serbia', 'Austria', 'Switzerland', 'Germany', 'Denmark', 'China', 'Ireland', 'South Korea', 'Japan', 'Turkey']
+      },
+      series: [
+        {
+          name: '治愈率',
+          type: 'bar',
+          color: '#B8F2E6',
+          barWidth: 40,
+          data: [0.9388530821351843, 0.9363038628625103, 0.9277155005798222, 0.9157431263424589, 0.9116347569955817, 0.9075116367436117, 0.8993581107853237, 0.8888611180538198, 0.8863094199103974, 0.8496578038535136]
+        }
+        // {
+        //   name: '死亡率',
+        //   type: 'bar',
+        //   color: '#5E6472',
+        //   data: [0.16137730066486913, 0.152467881948954, 0.1446883654750108, 0.1412415488629379, 0.1369150779896014, 0.12513673608387857, 0.11900816576350635, 0.11538461538461539, 0.11180559275175417, 0.1111111111111111]
+        // }
+      ]
+    };
+
+    myChart.setOption(option);
+  </script>
+</body>
+
+</html>

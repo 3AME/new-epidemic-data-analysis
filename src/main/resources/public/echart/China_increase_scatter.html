@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>ECharts</title>
+
+    <!-- 引入 echarts.js -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+
+    <div id="main" style="width: 1800px;height:900px;"></div>
+
+    <script type="text/javascript">
+        var myChart = echarts.init(document.getElementById('main'));
+
+        var weeks = ['week 1', 'week 2', 'week 3', 'week 4', 'week 5', 'week 6', 'week 7', 'week 8', 'week 9', 'week 10', 'week 11', 'week 12', 'week 13', 'week 14', 'week 15', 'week 16', 'week 17', 'week 18', 'week 19', 'week 20', 'week 21'];
+        var days = ['Saturday', 'Friday', 'Thursday',
+            'Wednesday', 'Tuesday', 'Monday', 'Sunday'];
+
+        var data = [[0, 0, 0], [1, 0, 0], [2, 0, 0], [3, 0, 95], [4, 0, 277], [5, 0, 486], [6, 0, 669], [0, 1, 802], [1, 1, 2632], [2, 1, 578], [3, 1, 2054], [4, 1, 1661], [5, 1, 2089], [6, 1, 4739], [0, 2, 3086], [1, 2, 3991], [2, 2, 3733], [3, 2, 3147], [4, 2, 3523], [5, 2, 2704], [6, 2, 3015], [0, 3, 2525], [1, 3, 2032], [2, 3, 1881], [3, 3, 13628], [4, 3, 6463], [5, 3, 2055], [6, 3, 2100], [0, 4, 1921], [1, 4, 1777], [2, 4, 408], [3, 4, 458], [4, 4, 473], [5, 4, 1451], [6, 4, 21], [0, 5, 219], [1, 5, 513], [2, 5, 412], [3, 5, 434], [4, 5, 328], [5, 5, 428], [6, 5, 576], [0, 6, 204], [1, 6, 125], [2, 6, 125], [3, 6, 151], [4, 6, 153], [5, 6, 80], [6, 6, 53], [0, 7, 37], [1, 7, 27], [2, 7, 34], [3, 7, 11], [4, 7, 13], [5, 7, 32], [6, 7, 26], [0, 8, 30], [1, 8, 25], [2, 8, 44], [3, 8, 54], [4, 8, 94], [5, 8, 55], [6, 8, 130], [0, 9, 63], [1, 9, 93], [2, 9, 70], [3, 9, 121], [4, 9, 115], [5, 9, 102], [6, 9, 123], [0, 10, 76], [1, 10, 81], [2, 10, 82], [3, 10, 71], [4, 10, 79], [5, 10, 32], [6, 10, 59], [0, 11, 63], [1, 11, 53], [2, 11, 91], [3, 11, 74], [4, 11, 58], [5, 11, 73], [6, 11, 120], [0, 12, 79], [1, 12, 93], [2, 12, 50], [3, 12, 47], [4, 12, 357], [5, 12, 27], [6, 12, 18], [0, 13, 12], [1, 13, 36], [2, 13, 15], [3, 13, 16], [4, 13, 15], [5, 13, 10], [6, 13, 3], [0, 14, 6], [1, 14, 22], [2, 14, 4], [3, 14, 12], [4, 14, 3], [5, 14, 0], [6, 14, 5], [0, 15, 2], [1, 15, 2], [2, 15, 2], [3, 15, 5], [4, 15, 1], [5, 15, 14], [6, 15, 20], [0, 16, 1], [1, 16, 7], [2, 16, 6], [3, 16, 5], [4, 16, 9], [5, 16, 6], [6, 16, 10], [0, 17, 9], [1, 17, 0], [2, 17, 0], [3, 17, 0], [4, 17, 18], [5, 17, 3], [6, 17, 11], [0, 18, 7], [1, 18, 1], [2, 18, 3], [3, 18, 0], [4, 18, 17], [5, 18, 5], [6, 18, 18], [0, 19, 8], [1, 19, 7], [2, 19, 0], [3, 19, 11], [4, 19, 6], [5, 19, 9], [6, 19, 5]];
+
+        data = data.map(function (item) {
+            return [item[1], item[0], item[2]];
+        });
+
+        option = {
+            title: {
+                text: '周新增情况',
+                // link: ''
+            },
+            // legend: {
+            //     data: ['Punch Card'],
+            //     left: 'right'
+            // },
+            tooltip: {
+                position: 'top',
+                formatter: function (params) {
+                    return params.value[2] + ' new cases ' + days[params.value[1]] + ' of ' + weeks[params.value[0]];
+                }
+            },
+            grid: {
+                // left: 2,
+                // bottom: 10,
+                // right: 10,
+                containLabel: true
+            },
+            xAxis: {
+                type: 'category',
+                data: weeks,
+                boundaryGap: false,
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#999',
+                        type: 'dashed'
+                    }
+                },
+                axisLine: {
+                    show: false
+                }
+            },
+            yAxis: {
+                type: 'category',
+                data: days,
+                axisLine: {
+                    show: false
+                }
+            },
+            series: [{
+                name: 'Punch Card',
+                type: 'scatter',
+                symbolSize: function (val) {
+                    return Math.sqrt(val[2]);
+                },
+                data: data,
+                animationDelay: function (idx) {
+                    return idx * 5;
+                }
+            }]
+        };
+        myChart.setOption(option);
+
+    </script>
+    <!-- <script src="USA.json?callback=USA"></script> -->
+
+</body>
+
+</html>

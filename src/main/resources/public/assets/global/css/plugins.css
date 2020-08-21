@@ -1240,7 +1240,7 @@ TableTools
 .DTTT_Print .page-content .dataTables_wrapper {
   padding: 0;
   margin: 0;
-  box-shadow: 5px 5px rgba(102, 102, 102, 0.1);
+  box-shadow: 5px 5px rgba(118, 230, 230, 0.1);
 }
 @media print {
   .DTTT_Print .page-content .dataTables_wrapper {

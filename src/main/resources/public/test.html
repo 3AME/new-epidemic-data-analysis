@@ -1,33 +1,31 @@
 <html>
-    <head></head>
-    <title>解析json</title>
-    <body>
 
-    </body>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript">
-        // window.onload = function(){
-        //     var url = "data/world_data/world_data2020-03-20.json"
-        //     var request = new XMLHttpRequest();
-        //     request.open("get",url);
-        //     request.send(null);
-        //     request.onload = function(){
-        //         if(request.status == 200){
-        //             var json = JSON.parse(request.responseText);
-        //             for(var i=0;i<json.length;i++){
-        //                 console.log(json[i].name);
-        //             }
-        //             console.log(json);
-        //         }
-        //     }
-        // }
+<head></head>
+<title>test</title>
 
-        var Ajax = function(){
-            $.getJSON("world-data2020-03-20.json",function(data){
-                $.each(data,function(i,item){
-                    console.log(item.name);
-                });
-            });
-        }();
-    </script>
+
+<body>
+
+</body>
+<script type="text/javascript" src="canvas-particle.js"></script>
+<script>
+    window.onload = function () {
+        //??
+        var config = {
+            vx: 4,//?x???,???????
+            vy: 4,//?y???
+            height: 2,//?????????????????
+            width: 2,
+            count: 100,//???
+            color: "121, 162, 185",//???
+            stroke: "130,255,255",//????
+            dist: 6000,//?????
+            e_dist: 20000,//????????
+            max_conn: 10//????????
+        }
+        //??
+        CanvasParticle(config);
+    }
+</script>
+
 </html>
