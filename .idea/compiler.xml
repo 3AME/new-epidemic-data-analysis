@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="epidemic-data-analysis" target="1.5" />
+      <module name="epidemic-data-analysis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
