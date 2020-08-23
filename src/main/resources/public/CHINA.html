@@ -377,19 +377,12 @@
                         <div class="portlet-body">
                             <div class="tabbable tabs-left">
                                 <ul class="nav nav-tabs">
-                                    <li class="active">
-                                        <a href="#tab_6_1" data-toggle="tab">
-                                            CURE_RATE </a>
-                                    </li>
                                     <li>
                                         <a href="#tab_6_2" data-toggle="tab">
                                             MORTALITY_RATE </a>
                                     </li>
                                 </ul>
                                 <div class="tab-content">
-                                    <div class="tab-pane active" id="tab_6_1">
-                                        <div id="china_cure_rate" style="width: 100%;; height: 59.5em"></div>
-                                    </div>
                                     <div class="tab-pane fade" id="tab_6_2">
                                         <div id="china_mortality_rate" style="width: 100%;; height: 59.5em"></div>
                                     </div>
@@ -933,76 +926,76 @@
     }
 
     // Chart4
-    setTimeout(getCure, 1000);
-
-    function getCure() {
-        var name4 = [];
-        var value4 = [];
-        var xmlHTTP4 = new XMLHttpRequest();
-        xmlHTTP4.onreadystatechange = function (ev) {
-            if (xmlHTTP4.readyState == 4 && xmlHTTP4.status == 200) {
-                var rep = JSON.parse(xmlHTTP4.responseText);
-                for (var i = 0; i < rep.length; i++) {
-                    name4.push(rep[i].name);
-                    value4.push(rep[i].value);
-                }
-
-                var myChart4 = echarts.init(document.getElementById('china_cure_rate'));
-
-                option4 = {
-                    title: {
-                        // text: 'Cure rate by region',
-                        // left: '30%'
-                        // subtext: '感染人数过万的国家中排序'
-                    },
-                    tooltip: {
-                        trigger: 'axis',
-                        axisPointer: {
-                            type: 'shadow'
-                        }
-                    },
-                    // legend: {
-                    //   data: ['治愈率', '死亡率']
-                    // },
-                    grid: {
-                        left: '3%',
-                        right: '4%',
-                        bottom: '5%',
-                        containLabel: true
-                    },
-                    xAxis: {
-                        type: 'value',
-                        boundaryGap: [0, 0.01]
-                    },
-                    yAxis: {
-                        type: 'category',
-                        data: name4
-                    },
-                    series: [
-                        {
-                            name: '治愈率',
-                            type: 'bar',
-                            color: '#B8F2E6',
-                            barWidth: 12,
-                            data: value4
-                        },
-                        // {
-                        //   name: '死亡率',
-                        //   type: 'bar',
-                        //   color: '#5E6472',
-                        //   data: [0.006054490413723511, 0.012311901504787962, 0.010309278350515464, 0.002785515320334262, 0.013422818791946308, 0.004987531172069825, 0.007874015748031496, 0.013605442176870748, 0.03529411764705882, 0.017857142857142856, 0.013771186440677966, 0.017241379310344827, 0.0036133694670280035, 0.06622147207749321, 0.003925417075564278, 0.0, 0.001072961373390558, 0.012903225806451613, 0.013422818791946308, 0.0, 0.004219409282700422, 0.0, 0.0, 0.00964630225080386, 0.008838383838383838, 0.01032448377581121, 0.0, 0.0051635111876075735, 0.01580135440180587, 0.015384615384615385, 0.039473684210526314, 0.0, 0.010810810810810811, 0.0007886435331230284]
-                        // }
-                    ]
-                };
-                myChart4.setOption(option4);
-                window.addEventListener("resize", () => {
-                    myChart4.resize();
-                });
-            }
-        }
-        xmlHTTP4.open('GET', '/uv/chinaCure', true);
-        xmlHTTP4.send();
-    }
+    // setTimeout(getCure, 1000);
+    //
+    // function getCure() {
+    //     var name4 = [];
+    //     var value4 = [];
+    //     var xmlHTTP4 = new XMLHttpRequest();
+    //     xmlHTTP4.onreadystatechange = function (ev) {
+    //         if (xmlHTTP4.readyState == 4 && xmlHTTP4.status == 200) {
+    //             var rep = JSON.parse(xmlHTTP4.responseText);
+    //             for (var i = 0; i < rep.length; i++) {
+    //                 name4.push(rep[i].name);
+    //                 value4.push(rep[i].value);
+    //             }
+    //
+    //             // var myChart4 = echarts.init(document.getElementById('china_cure_rate'));
+    //
+    //             option4 = {
+    //                 title: {
+    //                     // text: 'Cure rate by region',
+    //                     // left: '30%'
+    //                     // subtext: '感染人数过万的国家中排序'
+    //                 },
+    //                 tooltip: {
+    //                     trigger: 'axis',
+    //                     axisPointer: {
+    //                         type: 'shadow'
+    //                     }
+    //                 },
+    //                 // legend: {
+    //                 //   data: ['治愈率', '死亡率']
+    //                 // },
+    //                 grid: {
+    //                     left: '3%',
+    //                     right: '4%',
+    //                     bottom: '5%',
+    //                     containLabel: true
+    //                 },
+    //                 xAxis: {
+    //                     type: 'value',
+    //                     boundaryGap: [0, 0.01]
+    //                 },
+    //                 yAxis: {
+    //                     type: 'category',
+    //                     data: name4
+    //                 },
+    //                 series: [
+    //                     {
+    //                         name: '治愈率',
+    //                         type: 'bar',
+    //                         color: '#B8F2E6',
+    //                         barWidth: 12,
+    //                         data: value4
+    //                     },
+    //                     // {
+    //                     //   name: '死亡率',
+    //                     //   type: 'bar',
+    //                     //   color: '#5E6472',
+    //                     //   data: [0.006054490413723511, 0.012311901504787962, 0.010309278350515464, 0.002785515320334262, 0.013422818791946308, 0.004987531172069825, 0.007874015748031496, 0.013605442176870748, 0.03529411764705882, 0.017857142857142856, 0.013771186440677966, 0.017241379310344827, 0.0036133694670280035, 0.06622147207749321, 0.003925417075564278, 0.0, 0.001072961373390558, 0.012903225806451613, 0.013422818791946308, 0.0, 0.004219409282700422, 0.0, 0.0, 0.00964630225080386, 0.008838383838383838, 0.01032448377581121, 0.0, 0.0051635111876075735, 0.01580135440180587, 0.015384615384615385, 0.039473684210526314, 0.0, 0.010810810810810811, 0.0007886435331230284]
+    //                     // }
+    //                 ]
+    //             };
+    //             // myChart4.setOption(option4);
+    //             // window.addEventListener("resize", () => {
+    //             //     myChart4.resize();
+    //             // });
+    //         }
+    //     }
+    //     xmlHTTP4.open('GET', '/uv/chinaCure', true);
+    //     xmlHTTP4.send();
+    // }
 
 
     // Chart5
