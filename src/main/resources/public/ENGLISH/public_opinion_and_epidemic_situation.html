@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>epidemic-data-analysis | Public opinion</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+        type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/world.js"></script>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+    <!-- BEGIN HEADER -->
+    <div style="margin-top: 10px;" class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html" style="font-size: 18px;margin-top: 18px;">
+                    <img style="width: 8em;height: 3em;" src="../assets/admin/layout4/icons/logo_1.2.png" alt="logo"
+                        class="logo-default" />
+                </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+                data-target=".navbar-collapse">
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN PAGE TOP -->
+            <div class="page-top">
+            </div>
+            <button style="float: right;margin-top: 2%;margin-right: 1%;"><a href="../CH-ZN/public_opinion_and_epidemic_situation.html">Chinese</a></button>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+    </div>
+    <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <div class="clearfix">
+    </div>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse" style="color: black;margin-top: 50px;">
+                <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true"
+                data-slide-speed="200">
+                <li class="start ">
+                    <a href="index.html">
+                        <!-- <i class="icon-home"></i> -->
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/home.png" />
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="world_epidemic_situation.html"><img style="width: 20px;height: 20px;"
+                            src="../assets/admin/layout4/icons/world.png" />
+                        <span class="title">World epidemic situation</span> </a>
+                    <!-- <a  href="world_epidemic_situation.html">
+                        World epidemic situation</a> -->
+                </li>
+                <li>
+                    <a href="CHINA.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/中国地图.png" />
+                        <span class="title">China's epidemic situation </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="US.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/美国 (1).png" />
+                        <span class="title">U.S. epidemic situation</span></a>
+                </li>
+                <li>
+                    <a href="Analysis_and_forecasting.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/国家（pitch on）.png" />
+                        <span class="title">Analysis and forecasting</span> </a>
+                </li>
+                <li>
+                    <a href="public_opinion_and_epidemic_situation.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/virus.png" />
+                        <span class="title">Public opinion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="version.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/历史.png" />
+                        <span class="title">historic versions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/about us.png" />
+                        <span class="title">About us</span>
+                    </a>
+                </li>
+            </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                </div>
+                <!-- /.modal -->
+                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN PAGE HEAD -->
+                <div class="page-head">
+                    <!-- BEGIN PAGE TITLE -->
+                    <div class="page-title">
+                        <h1>Public opinion <small>Public opinion</small></h1>
+                    </div>
+                    <!-- END PAGE TITLE -->
+                </div>
+                <div class="portlet light">
+                    <div class="portlet-body">
+                        <div class="row">
+                            <div class="col-md-12 news-page">
+                                <h1 style="margin-top:0">Recent News</h1>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div id="myCarousel" class="carousel image-carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="active item">
+                                                    <a
+                                                        href="http://pic3.zhimg.com/v2-b6f4fbb627e5e5a2d8f4215d57f9fc57_1200x500.jpg"><img
+                                                       style="width: auto;height: auto;max-width: 100%;max-height: 100%;"     
+                                                        src="../assets/admin/layout4/img/virus.jpg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            VIRUS
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <a
+                                                        href="http://pic2.zhimg.com/v2-947324cb6cdec6dae23ef2306dcf9557_1200x500.jpg">
+                                                        <img style="width: auto;height: auto;max-width: 100%;max-height: 100%;"  src="../assets/admin/layout4/img/covid-19.jpg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            COVID-19
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <a
+                                                        href="http://img2.chinadaily.com.cn/images/202006/03/5ed6f96ea310a8b2fa4e46fa.jpeg">
+                                                        <img style="width: auto;height: auto;max-width: 100%;max-height: 100%;"  src="http://img2.chinadaily.com.cn/images/202006/03/5ed6f96ea310a8b2fa4e46fa.jpeg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            Medical staff to test
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                                <i class="m-icon-big-swapleft m-icon-white"></i>
+                                            </a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                                <i class="m-icon-big-swapright m-icon-white"></i>
+                                            </a>
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#myCarousel" data-slide-to="1">
+                                                </li>
+                                                <li data-target="#myCarousel" data-slide-to="2">
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="top-news margin-top-10">
+                                            <a href="javascript:;" class="btn blue">
+                                                <span>
+                                                    Featured News </span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    COVID-19 virus </em>
+                                                <i class="fa fa- icon-bullhorn top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/08/europe-nations-tighten-measures-covid-19-cases-rise-200828172912885.html">
+                                                    Europe: Several nations tighten measures as COVID-19 cases rise</a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_1.png" alt="">Several European countries are introducing tougher measures to control the spread of the coronavirus.
+
+                                                    France reported more than 6,000 new cases on Thursday - its second-highest daily caseload since the outbreak began.
+                                                    
+                                                    Infections are also rising in the United Kingdom, Germany and Spain.
+                                                    
+                                                    Al Jazeera's Rory Challands reports.
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/08/surge-covid-19-iraq-shia-mourn-imam-hussein-200828105112204.html">
+                                                    Amid surge in COVID-19, Iraq's Shia mourn Imam Hussein
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2020/8/28/9f89db7da7a94750a9abb5db2ce29484_18.jpg" alt="">Baghdad, Iraq - Ahead of a solemn mourning period for Shia Muslims, the message from the old man came through loud and clear: Coronavirus will not stop us from observing our ceremonies.
+
+                                                    "Listen to me!" the white-bearded man said in a video that went viral on social media as he addressed a crowd of worshippers inside a revered shrine.
+                                                    
+                                                    "Whether coronavirus exists or not, we will maintain our rituals as usual," he said, referring to the commemoration of the seventh-century death of Imam Hussein, the grandson of Prophet Muhammad.
+                                                    
+                                                    "Here we are at your service, oh Hussein," the worshippers replied, pumping their fists in the air. Some expressed their emotion by crying.
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/08/concern-widespread-covid-19-transmission-syria-200828065222962.html">
+                                                    UN concern over 'widespread' COVID-19 transmission in Syria</a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Healthcare facilities under pressure and limited testing is obscuring the real extent of the pandemic, UN official says.</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2020/8/28/45f74e6c83db45aa911cb659cfb8a8a5_18.jpg" alt="">The United Nations has raised concerns over the "widespread" transmission of the new coronavirus in war-torn Syria, where healthcare facilities are under increasing pressure and limited testing is obscuring the real extent of the pandemic.
+
+                                                    Syria has so far reported nearly 2,500 cases of COVID-19, the illness caused by the virus, including 98 deaths. 
+                                                    
+                                                    However, Ramesh Rajasingham, the UN's deputy emergency relief coordinator, said reports of healthcare facilities filling up and increasing death notices and burials appear to indicate the actual number of cases in the country "far exceed official figures" confirmed by the government. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-5-->
+                                    <div class="col-md-4">
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn red">
+                                                <span>
+                                                    Chinese News </span>
+                                                <!-- <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    UK, Canada, Asia </em> -->
+                                                <i class="fa fa-globe top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/coronavirus-cases-exceed-8-million-worldwide-live-updates-200616003326282.html">
+                                                    Beijing shuts schools over new coronavirus outbreak: Live updates
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Beijing</strong>
+                                                <!-- <em>2 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 120px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_beijing.png" alt="">Beijing's
+                                                education commission has ordered the closure of the capital's schools
+                                                again following a new outbreak of the coronavirus.
+                                                The steroid dexamethasone has been found to save the lives of one-third
+                                                of the most serious COVID-19 cases, according to trial results by the
+                                                University of Oxford, hailed as a "major breakthrough" in the fight
+                                                against the disease.More than 8 million people have been confirmed to
+                                                have the coronavirus around the world. Nearly 4 million have recovered,
+                                                while at least 438,000 have died, according to data compiled by Johns
+                                                Hopkins University. The US, Brazil and the UK have reported the most
+                                                deaths.
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/china-prepares-act-covid-19-outbreak-200616163014888.html">
+                                                    China prepares to act against new COVID-19 outbreak </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>CHINA, AGAINST</strong>
+                                                <!-- <em>5 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/CHINA_AGAINST.png" alt="">One of
+                                                China's top disease experts says the next 36 hours will be crucial in
+                                                predicting the effect of a new coronavirus outbreak in the capital.
+
+                                                Some neighbourhoods in Beijing were put back into lockdown on Sunday
+                                                after more than 100 new infections were confirmed.
+
+                                                The city had gone more than 50 days without any reported cases.
+
+                                                Al Jazeera's Priyanka Gupta reports.
+                                            </p>
+                                        </div>
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn green">
+                                                <span>
+                                                    About medicine </span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    COVID-19,medicine </em>
+                                                <i class="fa fa-briefcase top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/dexamethasone-reduces-death-risk-severe-covid-19-cases-trial-200616135013972.html">
+                                                    Dexamethasone reduces death risk in severe COVID-19 cases: Trial
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>medicine</strong>
+                                                <!-- <em>2 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_3.png" alt="">Dexamethasone, a
+                                                cheap and widely used steroid, has been found to dramatically reduce the
+                                                risk of dying from COVID-19, the disease caused by the new coronavirus,
+                                                in what scientists in the United Kingdom have hailed as a "major
+                                                breakthrough".
+
+                                                Researchers led by a team from the University of Oxford administered
+                                                dexamethasone, which is used to reduce inflammation in other diseases,
+                                                to more than 2,000 severely ill COVID-19 patients.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="news-blocks">
+                                            <h3>
+                                                <a href="page_news_item.html">
+                                                    Sanditiis praesentium vo </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Ankara, Turkey</strong>
+                                                <em>5 hours ago</em>
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/szy.jpg" alt="">At vero eos et
+                                                accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                                voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                                excepturi sint praesentium voluptatum delenitioccaecati cupiditate non
+                                                provident
+                                            </p>
+                                        </div> -->
+                                    </div>
+                                    <!--end col-md-4-->
+                                    <div class="col-md-3">
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn purple">
+                                                <span>
+                                                    Foreign news </span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    COVID-19 foreign news </em>
+                                                <i class="fa fa-beaker top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/08/kamala-harris-delivers-rebuke-trump-covid-19-response-200827205521395.html">
+                                                    Kamala Harris delivers rebuke of Trump's COVID-19 response
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Harris launches her first major attack on the president hours before his address to the virtual Republican convention.</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="https://www.aljazeera.com/mritems/imagecache/mbdxxlarge/mritems/Images/2020/8/27/26f70104926940cd9910eca2dcddf6b9_18.jpg" alt="">Democratic vice-presidential nominee Kamala Harris has launched a scathing critique of United States President Donald Trump's handling of the coronavirus pandemic and racial unrest roiling American cities.
+
+                                                    In a speech on Thursday, hours before Trump was due to address the final day of the virtual Republican National Convention (RNC), Harris argued that the president has shown "a reckless disregard for the wellbeing of the American people" in failing to contain the COVID-19 outbreak.
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/ajimpact/india-health-workers-alarmed-black-holes-covid-19-apps-200826135111352.html">
+                                                    India: Health workers alarmed over 'black holes' in COVID-19 apps</a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Health officials and lawyers have expressed worry about unclear terms on issues like data retention and sharing.</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_2.png" alt="">Harinder Kaur was not surprised when people slammed their doors in her face as she walked into neighbourhoods in the northern state of Punjab armed with a smartphone and a long list of health and travel-related questions.
+
+                                                    The 28-year-old health worker had been told to go door-to-door in villages in Patiala district and help populate the state's COVID-19 tracing app with "thousands of details" people were unwilling to share, from their digestive health to their mobile numbers.
+                                            </p>
+                                        </div>
+                                        <!-- <div class="top-news">
+                                            <a href="javascript:;" class="btn yellow">
+                                                <span>
+                                                    Sport </span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    Football, Swimming, Tennis </em>
+                                                <i class="fa fa-trophy top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="page_news_item.html">
+                                                    Vero eos et accusam </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>CA, USA</strong>
+                                                <em>3 hours ago</em>
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/szy.jpg" alt="">At vero eos et
+                                                accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                                voluptatum deleniti atque corrupti quos dolores et quas molestias
+                                                excepturi sint occaecati cupiditate non provident
+                                            </p>
+                                        </div> -->
+                                    </div>
+                                    <!--end col-md-3-->
+                                </div>
+                                <div class="space20">
+                                </div>
+                                <h3>News Option</h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/indepth/opinion/fight-covid-19-turn-gaze-space-200805154031367.html">
+                                                    As we fight COVID-19, we should turn our gaze to space</a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/virus.jpg"
+                                                    alt="">Humanity is facing an invasion. In the span of a few months, an invisible outside force we about which we know very little about has killed hundreds of thousands and wreaked havoc in all corners of the world.
+
+                                                    Humans have long wondered what would happen in such a scenario. World literature and cinema are full of fictional stories about deadly attacks by "aliens" from other worlds. In most of these stories, human beings put aside their differences and come together to fight the common enemy. They unite under the banner of saving humanity, its creations, its values and the planet it calls home. 
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/live-brazil-nears-50000-coronavirus-deaths-1-million-cases-200618235506650.html">
+                                                    Guatemala replaces health minister and his three deputies </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Guatemala</strong>
+                                                <!-- <em>6 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                Guatemala's Health Minister Hugo Monroy and three deputies in his
+                                                ministry have been replaced, the office of the president said and
+                                                announced the names of their replacements.
+                                                It was not immediately clear why Monroy and the three vice ministers
+                                                left their jobs. Monroy has faced criticism over his handling of the
+                                                coronavirus pandemic, including the purchasing of personal protection
+                                                equipment and pay to health workers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-3-->
+                                    <div class="col-md-3">
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/live-brazil-nears-50000-coronavirus-deaths-1-million-cases-200618235506650.html">
+                                                    Switzerland to allow gatherings of up to 1,000 people </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Switzerland</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/covid-19.jpg"
+                                                    alt="">Switzerland has announced that gatherings of up to 1,000
+                                                people would be permitted next week, in a fourth stage of gradually
+                                                easing the restrictions imposed to control COVID-19.
+
+                                                The wealthy Alpine nation has managed to avoid the worst of the
+                                                coronavirus pandemic, despite its border with northern Italy - Europe's
+                                                early epicentre for deaths and infections.
+
+                                                The physical distancing requirement is being cut from two metres to 1.5
+                                                metres from Monday, while the midnight curfew on restaurants and
+                                                nightclubs is also being lifted, as is the requirement to be seated at
+                                                tables in bars.
+
+                                                The maximum size of gatherings will be raised on Monday from 300 to
+                                                1,000 people, the government said, so long as the number of people to be
+                                                contact-traced in case of an infection remains at no more than 300,
+                                                through measures such as separating groups into sections.
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/live-brazil-nears-50000-coronavirus-deaths-1-million-cases-200618235506650.html">
+                                                    France reports less than 20 new coronavirus deaths </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>France</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                The number of people who died from coronavirus infection in France rose
+                                                by 14 to 29,617, the lowest increase in five days.
+                                                The number of people in hospital for COVID-19 infections fell by 155 to
+                                                9,970, the first time that total is lower than the 10,000 threshold in
+                                                almost three months.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-3-->
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="https://www.aljazeera.com/news/2020/08/struggling-designers-find-ways-fight-covid-indonesia-200826104252843.html">
+                                                            Struggling designers find ways to help fight COVID in Indonesia </a>
+                                                    </h3>
+                                                    <div class="news-block-tags">
+                                                        <strong>A challenge turned into fashion - how the coronavirus pandemic provided textile designers with an opportunity to make millions of masks every day.</strong>
+                                                        <!-- <em>3 hours ago</em> -->
+                                                    </div>
+                                                    <p>
+                                                        <img style="width: 100px;height: 100px;"
+                                                            class="news-block-img pull-right"
+                                                            src="http://www.xinhuanet.com/english/2020-06/19/139150357_15925242556561n.jpg"
+                                                            alt="">The outbreak of COVID-19 is challenging creative industries around the world.
+
+                                                            In Indonesia, many artisans have had to adapt to keep their businesses viable.
+                                                            
+                                                            Textile designers are now helping combat the pandemic by making millions of masks a day.
+                                                            
+                                                            Al Jazeera's Jessica Washington reports from Jakarta.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="https://www.aljazeera.com/news/2020/06/live-brazil-nears-50000-coronavirus-deaths-1-million-cases-200618235506650.html">
+                                                            Airlines' legal challenge of UK quarantine policy to be
+                                                            heard early July </a>
+                                                    </h3>
+                                                    <div class="news-block-tags">
+                                                        <strong>Airlines</strong>
+                                                        <!-- <em>3 hours ago</em> -->
+                                                    </div>
+                                                    <p>
+                                                        A legal challenge by British Airways, easyJet and Ryanair
+                                                        against the UK government's decision to introduce a 14-day
+                                                        quarantine for travellers will be heard in early July,
+                                                        barristers involved in the case have said.
+                                                        "The airlines claim that the regulations are irrational and
+                                                        disproportionate. A hearing has been listed for early July,"
+                                                        Blackstone Chambers said in a statement.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="https://www.aljazeera.com/news/2020/06/live-brazil-nears-50000-coronavirus-deaths-1-million-cases-200618235506650.html">
+                                                            Italy reports 47 coronavirus deaths, 251 new cases </a>
+                                                    </h3>
+                                                    <div class="news-block-tags">
+                                                        <strong>Italy</strong>
+                                                        <!-- <em>3 hours ago</em> -->
+                                                    </div>
+                                                    <p>
+                                                        Deaths from the COVID-19 epidemic in Italy climbed by 47,
+                                                        against 66 the day before, the Civil Protection Agency said,
+                                                        while the daily tally of new cases decreased to 251 from 333 on
+                                                        Thursday.
+                                                        The total death toll since the outbreak came to light on Feb. 21
+                                                        now stands at 34,561 the agency said, the fourth highest in the
+                                                        world after those of the United States, Brazil and Britain.
+                                                        The number of confirmed cases amounts to 238,011 the eighth
+                                                        highest global tally. People registered as currently carrying
+                                                        the illness fell to 21,543 from 23,101 the day before.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-6-->
+                                </div>
+                                <div class="space20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer navbar-fixed-bottom">
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+                Back to top
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <script src="../assets/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+    <script src="../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Demo.init(); // init demo features
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+    <script type="text/javascript" src="../assets/global/scripts/canvas-nest.js"></script>
+    <canvas id="c_n1"></canvas>
+</body>
+<!-- END BODY -->
+
+</html>

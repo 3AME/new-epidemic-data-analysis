@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>疫情数据分析 |新闻</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+        type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet"
+        type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/world.js"></script>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+    <!-- BEGIN HEADER -->
+    <div style="margin-top: 10px;" class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <a href="index.html" style="font-size: 18px;margin-top: 18px;">
+                    <img style="width: 8em;height: 3em;" src="../assets/admin/layout4/icons/logo_1.2.png" alt="logo"
+                        class="logo-default" />
+                </a>
+                <div class="menu-toggler sidebar-toggler">
+                    <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+                data-target=".navbar-collapse">
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN PAGE TOP -->
+            <div class="page-top">
+            </div>
+            <button style="float: right;margin-top: 2%;margin-right: 1%;"><a
+                    href="../ENGLISH/public_opinion_and_epidemic_situation.html">English</a></button>
+            <!-- END TOP NAVIGATION MENU -->
+        </div>
+        <!-- END PAGE TOP -->
+    </div>
+    <!-- END HEADER INNER -->
+    </div>
+    <!-- END HEADER -->
+    <div class="clearfix">
+    </div>
+    <!-- BEGIN CONTAINER -->
+    <div class="page-container">
+        <!-- BEGIN SIDEBAR -->
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse collapse" style="color: black;margin-top: 50px;">
+                <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true"
+                    data-slide-speed="200">
+                    <li class="start ">
+                        <a href="index.html">
+                            <!-- <i class="icon-home"></i> -->
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/home.png" />
+                            <span class="title">主页</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="world_epidemic_situation.html"><img style="width: 20px;height: 20px;"
+                                src="../assets/admin/layout4/icons/world.png" />
+                            <span class="title">世界疫情情况</span> </a>
+                        <!-- <a  href="world_epidemic_situation.html">
+                            World epidemic situation</a> -->
+                    </li>
+                    <li>
+                        <a href="CHINA.html">
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/中国地图.png" />
+                            <span class="title">中国疫情情况 </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="US.html">
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/美国 (1).png" />
+                            <span class="title">美国疫情情况</span></a>
+                    </li>
+                    <li>
+                        <a href="Analysis_and_forecasting.html">
+                            <img style="width: 20px;height: 20px;"
+                                src="../assets/admin/layout4/icons/国家（pitch on）.png" />
+                            <span class="title">分析与预测</span> </a>
+                    </li>
+                    <li>
+                        <a href="public_opinion_and_epidemic_situation.html">
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/virus.png" />
+                            <span class="title">疫情新闻</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="version.html">
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/历史.png" />
+                            <span class="title">历史版本</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about_us.html">
+                            <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/about us.png" />
+                            <span class="title">关于我们</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- END SIDEBAR MENU -->
+            </div>
+        </div>
+        <!-- END SIDEBAR -->
+        <!-- BEGIN CONTENT -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                </div>
+                <!-- /.modal -->
+                <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+                <!-- BEGIN PAGE HEADER-->
+                <!-- BEGIN PAGE HEAD -->
+                <div class="page-head">
+                    <!-- BEGIN PAGE TITLE -->
+                    <div class="page-title">
+                        <h1>新闻<small>新闻</small></h1>
+                    </div>
+                    <!-- END PAGE TITLE -->
+                </div>
+                <div class="portlet light">
+                    <div class="portlet-body">
+                        <div class="row">
+                            <div class="col-md-12 news-page">
+                                <h1 style="margin-top:0">最近新闻动态</h1>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div id="myCarousel" class="carousel image-carousel slide">
+                                            <div class="carousel-inner">
+                                                <div class="active item">
+                                                    <a
+                                                        href="http://pic3.zhimg.com/v2-b6f4fbb627e5e5a2d8f4215d57f9fc57_1200x500.jpg"><img
+                                                            style="width:auto;height:auto;max-width:100%;max-height:100%;"
+                                                            src="../assets/admin/layout4/img/virus.jpg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            VIRUS
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <a
+                                                        href="http://pic2.zhimg.com/v2-947324cb6cdec6dae23ef2306dcf9557_1200x500.jpg">
+                                                        <img style="width:auto;height:auto;max-width:100%;max-height:100%;"
+                                                            src="../assets/admin/layout4/img/covid-19.jpg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            COVID-19
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <a
+                                                        href="http://img2.chinadaily.com.cn/images/202006/03/5ed6f96ea310a8b2fa4e46fa.jpeg">
+                                                        <img style="width:auto;height:auto;max-width:100%;max-height:100%;"
+                                                            src="http://img2.chinadaily.com.cn/images/202006/03/5ed6f96ea310a8b2fa4e46fa.jpeg"
+                                                            class="img-responsive" alt=""></a>
+                                                    <div class="carousel-caption">
+                                                        <h4>
+                                                            Medical staff to test
+                                                        </h4>
+                                                        <!-- <p>
+                                                            Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                                                        </p> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Carousel nav -->
+                                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                                <i class="m-icon-big-swapleft m-icon-white"></i>
+                                            </a>
+                                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                                <i class="m-icon-big-swapright m-icon-white"></i>
+                                            </a>
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#myCarousel" data-slide-to="0" class="active">
+                                                </li>
+                                                <li data-target="#myCarousel" data-slide-to="1">
+                                                </li>
+                                                <li data-target="#myCarousel" data-slide-to="2">
+                                                </li>
+                                            </ol>
+                                        </div>
+                                        <div class="top-news margin-top-10">
+                                            <a href="javascript:;" class="btn blue">
+                                                <span>
+                                                    疫情最新动态</span>
+                                                <em>
+                                                    <!-- <i class="fa fa-tags"></i>
+                                                    COVID-19 virus </em> -->
+                                                    <i class="fa fa- icon-bullhorn top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="https://www.sohu.com/a/415042124_119759">
+                                                    全球疫情最新动态：黎巴嫩恐将失控 缅甸关闭学校 </a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_1.png" alt="">
+                                                黎巴嫩总理哈桑·迪亚布（Hassan
+                                                Diab）表示，该国疫情可能正在失控。迪亚布在最高防务委员会发表的声明中说：“确诊病例数量大大增加，如果继续下去，我们将失去对这一流行病的控制。”
+                                                <br><br>黎巴嫩周二报告了525例新新增Covid-19感染病例和12例死亡病例。在本月初首都发生灾难性爆炸之后，该国的感染人数有所上升。医务人员说，爆炸发生后的两周内，病例数增加了一倍，这是因为感染在正在治疗受害者的医院中传播。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="http://www.gov.cn/fuwu/zt/yqfwzq/zxqk.htm">
+                                                    最新情况_疫情防控
+                                                </a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: auto;height: auto;max-width: 100%;max-height: 100%;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/M.png" alt="">
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="http://www.xkgz.com/newsText.asp?strId=8245&inPage=3">
+                                                    肺炎疫情实时动态 钟南山最新发声谈疫情峰值具体内容 疫情拐点到了吗 湖北以外新增病例14连降</a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/DRUG.png"
+                                                    alt="">钟南山表示，湖北以外，全国新增确诊病例总数已经连续13天下降。这个事实可以看得出中央强有力的干预措施起了效果：“现在有没有达到峰值，我们还在看，我们估计差不多了。到了峰值不等于到了拐点，也可能随着劳工（节后）的大流动，会不会再出来一个峰，我个人的估计大概不会。因为现在流动过程中也采取了非常严格的检测措施，隔离措施，不太容易出现一个大高峰（互相传染、聚集性感染）”。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-5-->
+                                    <div class="col-md-4">
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn red">
+                                                <span>
+                                                    中国疫情最新消息新增情况 </span>
+                                                <i class="fa fa-globe top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="http://www.forbeschina.com/life/50727">
+                                                    疫情追踪|11日新增本土病例9例 均在新疆
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>新疆</strong>
+                                                <!-- <em>2 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 120px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_beijing.png"
+                                                    alt="">8月11日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例25例，其中境外输入病例16例（广东6例，上海4例，内蒙古1例，浙江1例，福建1例，山东1例，四川1例，陕西1例），本土病例9例（均在新疆）；无新增死亡病例；新增疑似病例1例，为境外输入病例（在上海）。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://news.chinaxiaokang.com/shehuipindao/shehui/20200828/1031316.html">
+                                                    31省区市新增9例确诊 均为境外输入！连续12日本土零新增 国内疫情最新消息8月27日</a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/CHINA_AGAINST.png"
+                                                    alt="">截至8月27日24时，据31个省(自治区、直辖市)和新疆生产建设兵团报告，现有确诊病例288例(其中重症病例4例)，累计治愈出院病例80091例，累计死亡病例4634例，累计报告确诊病例85013例，现有疑似病例3例。累计追踪到密切接触者814039人，尚在医学观察的密切接触者10040人。
+                                                　　<br><br>31个省(自治区、直辖市)和新疆生产建设兵团报告新增无症状感染者16例(均为境外输入)；当日转为确诊病例2例(均为境外输入)；当日解除医学观察21例(境外输入18例)；尚在医学观察无症状感染者358例(境外输入313例)。
+                                            </p>
+                                        </div>
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn green">
+                                                <span>
+                                                    综合消息 </span>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://www.chinanews.com/gn/2020/07-29/9251484.shtml">
+                                                    中国内地新增确诊病例创3月6日来新高 专家称疫情未来大流行可能性不大
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>(抗击新冠肺炎)综合消息：中国内地新增确诊病例创3月6日来新高 专家称疫情未来大流行可能性不大</strong>
+                                                <!-- <em>2 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_3.png" alt="">　中新社北京7月29日电 28日，中国内地新增确诊病例突破百例，创下自3月6日以来的日增新高，现有确诊病例数则是5月3日以来的最高点。中国疾控中心流行病学前首席科学家曾光29日表示，这意味着中国疫情出现了局部反弹，但在中国防控措施愈加成熟之际，疫情在未来大流行的可能性不大。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-4-->
+                                    <div class="col-md-3">
+                                        <div class="top-news">
+                                            <a href="javascript:;" class="btn purple">
+                                                <span>
+                                                疫情通报</span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                   疫情通报 </em>
+                                                <i class="fa fa-beaker top-news-icon"></i>
+                                            </a>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.cn-healthcare.com/articlewm/20200829/content-1141611.html">
+                                                    ​北京无新增丨8月28日新冠肺炎疫情最新情况通报
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>北京</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/moxico.png" alt="">8月28日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例9例，均为境外输入病例（上海3例，福建2例，广东2例，四川2例）；无新增死亡病例；无新增疑似病例。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://news.jznews.com.cn/system/2020/08/29/011995268.shtml">
+                                                    8月28日湖北省、荆州市最新疫情通报！
+                                                </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>湖北</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/moxico.png" alt="">020年8月28日0—24时，全省新增新冠肺炎确诊病例0例，新增疑似病例0例，新增出院病例0例，新增死亡病例0例。
+
+                                                    　　8月28日，全省新增无症状感染者0例，转确诊0例，解除隔离0例，尚在医学观察的无症状感染者0例。
+                                                    
+                                                    　　截至2020年8月28日24时，全省现有确诊病例1例(境外输入，普通型)，现有疑似病例0例。累计治愈出院63626例，累计病亡4512例，全省累计报告新冠肺炎确诊病例68139例。全省累计追踪密切接触者285555人，尚在接受医学观察3人。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.aljazeera.com/news/2020/06/measures-beijing-coronavirus-cases-spike-live-200614233622226.html">
+                                                    世卫组织：全球累计新冠确诊病例达24299923例</a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>世卫组织</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/news_2.png" alt="">新华社日内瓦8月28日电（记者刘曲）世界卫生组织28日公布的最新数据显示，全球新冠累计确诊病例达24299923例。
+                                                    　　<br><br>世卫组织网站最新数据显示，截至欧洲中部时间28日16时33分（北京时间22时33分），全球确诊病例较前一日增加281581例，达到24299923例；死亡病例增加6261例，达到827730例。
+                                            </p>
+                                        </div>
+                                        <!-- <div class="top-news">
+                                            <a href="javascript:;" class="btn yellow">
+                                                <span>
+                                                    Sport </span>
+                                                <em>
+                                                    <i class="fa fa-tags"></i>
+                                                    Football, Swimming, Tennis </em>
+                                                <i class="fa fa-trophy top-news-icon"></i>
+                                            </a>
+                                        </div> -->
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a href="https://www.gucheng.com/hot/2020/3951518.shtml">
+                                                    8月29日新疆疫情通报 该地什么时候解封 </a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="https://jsnews.jschina.com.cn/nj/a/202002/W020200214390877368138.jpg" alt="">据国家卫建委8月29日通报疫情最新消息，昨日31省和新疆新增9例确诊病例和10例无症状感染病例，皆由境外输入。新疆疫情已经得到彻底控制，该地区从8月16日开始新增确诊清零，截止8月28日无新增确诊。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-3-->
+                                </div>
+                                <div class="space20">
+                                </div>
+                                <h3>疫情舆论</h3>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://www.china.com.cn/txt/2020-08/04/content_76343981.htm">
+                                                    全国政协常委吴昌德：抗击疫情 舆论引导不能缺位</a>
+                                            </h3>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/virus.jpg" alt="">在抗击新冠肺炎疫情中，有一个重要特点，就是疫情信息传播速度非常快，各种谣言和不良信息夹杂其中，对公众心理情绪影响特别大，因此加强舆论引导工作显得格外重要。
+
+                                                    着力提升主流媒体网上传播能力。多样化的社会环境、自媒体的信息时代，“舆论一律”不可能，面对多样化舆论环境下各种不同声音的客观存在，应允许社会不同阶层和人群、不同价值观念和利益诉求合理合法适度表达。简单粗暴的封杀、删帖，往往事与愿违、效果适得其反。应当着力在做大做强主流媒体、提升主流媒体网上传播能力上下功夫，主动回应社会关切，对善意的批评、意见、建议，认真听取并加以改进。同时要守住政治底线，对借机恶意攻击党的领导和社会主义制度的言论，依法依规予以坚决制止。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://med.china.com.cn/content/pid/194283/tid/1026">
+                                                    从新冠肺炎疫情防控宣传看新媒体舆论引领力 </a>
+                                            </h3>
+                                            <p>
+                                                庚子鼠年，一场抗击新冠肺炎疫情的人民战争在神州大地打响。伴随着这场全民抗疫斗争，一场没有硝烟的宣传舆论战由此拉开。公众号、抖音、微博等新媒体，在疫情防控宣传舆论引导中发挥反应快、覆盖广、形式活、互动强等优势，展现出很强的辐射力、感染力，深受社会大众的喜爱与欢迎，在此次舆论战“疫”中发挥了重要引领作用，为打赢疫情防控阻击战提供了强大舆论支撑。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-3-->
+                                    <div class="col-md-3">
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="https://www.sohu.com/a/408123451_653069">
+                                                    网络舆论引导与大学生爱国主义教育研究——基于新冠疫情的思考 </a>
+                                            </h3>
+                                            <div class="news-block-tags">
+                                                <strong>Switzerland</strong>
+                                                <!-- <em>3 hours ago</em> -->
+                                            </div>
+                                            <p>
+                                                <img style="width: 100px;height: 100px;"
+                                                    class="news-block-img pull-right"
+                                                    src="../assets/admin/layout4/img/covid-19.jpg" alt="">党的十九大提出，必须树立正确的新闻观念，对网络媒体进行引导，在全社会弘扬社会主义核心价值观。新时代加强爱国主义教育离不开舆论的正确引导。疫情防控中做好爱国主义舆论引导，有助于青年大学生激发爱国热情，坚定抗击疫情的信心。《新时代爱国主义教育实施纲要》明确提出：要用好报刊广播影视等大众传媒，营造浓厚氛围，聚焦爱国主义主题，创新方法手段，适应分众化、差异化传播趋势，使爱国主义宣传报道接地气、有生气、聚人气，有情感、有深度、有温度。所以，加强大学生爱国主义教育，要发挥好舆论引导作用，尤其是舆论引导的艺术性。
+                                            </p>
+                                        </div>
+                                        <div class="news-blocks">
+                                            <h3>
+                                                <a
+                                                    href="http://cn.chinadaily.com.cn/a/202007/14/WS5f0d1e69a310a859d09d7b1f.html">
+                                                    在疫情防控的宣传中引领主流舆论</a>
+                                            </h3>
+                                            <p>
+                                                疫情防控是个大考题，考验着媒体人是否真正做到守初心、担使命。面对新冠肺炎疫情这一突发公共卫生事件，全国上下各级主流媒体都积极启动应急机制，在疫情防控的宣传中引领主流舆论。
+                                                <br><br>在新媒体时代，如何在寻找事实性新闻报道的着力点，着力在强信心、暖人心、聚民心上下功夫，从而发挥强大的信息传播和舆论引导功能，这无疑考量着主流媒体的担当与智慧。
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-3-->
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="http://usa.people.com.cn/n1/2020/0703/c241376-31770403.html">
+                                                            仓促重启经济致疫情反扑 美国舆论谴责政府抗疫不力</a>
+                                                    </h3>
+                                                    <div class="news-block-tags">
+                                                        <strong>美国</strong>
+                                                        <!-- <em>3 hours ago</em> -->
+                                                    </div>
+                                                    <p>
+                                                        <img style="width: 100px;height: 100px;"
+                                                            class="news-block-img pull-right"
+                                                            src="http://www.xinhuanet.com/english/2020-06/19/139150357_15925242556561n.jpg"
+                                                            alt="">美国作为全球医疗技术最发达、最成熟的国家，应对疫情至如此程度，既让人费解，也令人深思。美国政府为满足政治私利，淡化疫情，不讲科学，甚至“甩锅”推责的做法也引来美国民众、专家和媒体的广泛谴责。
+
+                                                            <br><br>里卡多·阿吉雷今年42岁，生活在亚利桑那州 菲尼克斯市。他自己、父母、怀孕6个月的妻子和两个十几岁的孩子都感染了新冠病毒，虽然他和妻子、孩子已经痊愈，但父母目前仍然症状严重。而他的亲戚中已经有5人在不到一个月的时间内接连死于新冠肺炎。阿吉雷认为当地政府没有尽全力遏制病毒的传播。
+                                                            
+                                                            <br><br>亚利桑那州居民 里卡多·阿吉雷：我认为近期的新增确诊病例应该归咎于政府，因为亚利桑那州已经成了美国疫情的新“热点。”在我看来，州长没有做好自己的工作。
+                                                            
+                                                            <br><br>包括亚利桑那州在内，近期疫情反弹严重的美国多州当初都积极响应联邦政府重启经济的号召，这让许多民众产生了质疑。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="http://hnrb.voc.com.cn/article/202005/202005270735188216001.html">
+                                                            后疫情时代，媒体如何进行舆论引领</a>
+                                                    </h3>
+                                                    <p>
+                                                        后疫情时代，媒体如何进行舆论引领 
+                                                        <br><br>看湖南日报社全国两会报道
+                                                        <br><br>在后疫情时代首场媒体“大考”中，湖南日报社在确保导向“零差错”“零事故”的基础上，移动优先、融合传播、多点突破、“全新”出发，在今年特殊的全国两会报道中奉上了一道道特别的新闻大餐。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="news-blocks">
+                                                    <h3>
+                                                        <a
+                                                            href="https://news.sina.com.cn/c/2020-05-27/doc-iircuyvi5194557.shtml">
+                                                            最高检工作报告网络舆论反响热烈 </a>
+                                                    </h3>
+                                                    <p>
+                                                        正义网北京5月26日电(记者侯文昌)5月25日16时许,最高人民检察院检察长张军在十三届全国人大三次会议上作最高检工作报告。报告审议版全文在网上发布后,引发国内网络舆论持续热议。
+
+                                                        　　非常时期坚守检察理性
+                                                        
+                                                        　　受新冠肺炎疫情影响,2020年全国两会推迟至5月召开。在今年的工作报告中,最高检不吝篇幅,对疫情防控期间的检察态度、检察作为进行了颇为详尽的总结,引起多家媒体的关注。
+                                                        
+                                                        　　5月25日以来,中新社、环球网在报道中均提及,较往年不同,疫情以来的工作成为今年最高检工作报告的重要开场,把新冠肺炎疫情防控和维护稳定工作放在突出位置。
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--end col-md-6-->
+                                </div>
+                                <div class="space20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <div class="page-footer navbar-fixed-bottom">
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+                回到页首
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+    <!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+    <script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+    <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+    <!-- END CORE PLUGINS -->
+    <script src="../assets/global/scripts/metronic.js" type="text/javascript"></script>
+    <script src="../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+    <script src="../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+    <script>
+        jQuery(document).ready(function () {
+            Metronic.init(); // init metronic core components
+            Layout.init(); // init current layout
+            Demo.init(); // init demo features
+        });
+    </script>
+    <!-- END JAVASCRIPTS -->
+    <script type="text/javascript" src="../assets/global/scripts/canvas-nest.js"></script>
+    <canvas id="c_n1"></canvas>
+</body>
+<!-- END BODY -->
+<style>
+    p{
+        font-style: normal;
+    }
+    h3{
+        font-style: normal;
+    }
+    span{
+        font-style: normal;
+    }
+</style>
+</html>

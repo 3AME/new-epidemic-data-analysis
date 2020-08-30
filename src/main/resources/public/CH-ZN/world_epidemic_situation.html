@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>疫情数据分析 | 世界疫情分布</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/world.js"></script>
+    <script type="text/javascript" src="../echart/js/echarts-wordcloud.js"></script>
+
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+
+<!-- BEGIN HEADER -->
+<div style="margin-top: 10px;" class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html" style="font-size: 18px;margin-top: 18px;">
+                <img style="width: 8em;height: 3em;" src="../assets/admin/layout4/icons/logo_1.2.png" alt="logo"
+                     class="logo-default"/>
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+           data-target=".navbar-collapse">
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+        </div>
+        <button style="float: right;margin-top: 2%;margin-right: 1%;"><a href="../ENGLISH/world_epidemic_situation.html">English</a></button>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+    <!-- END PAGE TOP -->
+</div>
+<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse" style="color: black;margin-top: 50px;">
+            <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true"
+                data-slide-speed="200">
+                <li class="start ">
+                    <a href="index.html">
+                        <!-- <i class="icon-home"></i> -->
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/home.png" />
+                        <span class="title">主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="world_epidemic_situation.html"><img style="width: 20px;height: 20px;"
+                                                                 src="../assets/admin/layout4/icons/world.png" />
+                        <span class="title">世界疫情情况</span> </a>
+                    <!-- <a  href="world_epidemic_situation.html">
+                        世界疫情分布</a> -->
+                </li>
+                <li>
+                    <a href="CHINA.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/中国地图.png" />
+                        <span class="title">中国疫情情况 </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="US.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/美国 (1).png" />
+                        <span class="title">美国疫情情况</span></a>
+                </li>
+                <li>
+                    <a href="Analysis_and_forecasting.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/国家（pitch on）.png" />
+                        <span class="title">分析与预测</span> </a>
+                </li>
+                <li>
+                    <a href="public_opinion_and_epidemic_situation.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/virus.png" />
+                        <span class="title">疫情新闻</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="version.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/历史.png" />
+                        <span class="title">历史版本</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/about us.png" />
+                        <span class="title">关于我们</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+            </div>
+            <!-- /.modal -->
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- BEGIN PAGE HEADER-->
+            <!-- BEGIN PAGE HEAD -->
+            <div class="page-head">
+                <!-- BEGIN PAGE TITLE -->
+                <div class="page-title">
+                    <h1>世界疫情分布<small> 世界疫情分布</small></h1>
+                </div>
+                <!-- END PAGE TITLE -->
+            </div>
+            <!-- END PAGE HEAD -->
+            <!-- BEGIN PAGE BREADCRUMB -->
+            <!-- 添加链接，跳转，不是很有必要，因为已经有菜单了 -->
+            <!-- <ul class="page-breadcrumb breadcrumb"> -->
+            <!-- <li>
+                <a href="index.html">Home</a>
+                <i class="fa fa-circle"></i>
+            </li> -->
+            <!-- <li>
+                <a href="#">Page Layouts</a>
+                <i class="fa fa-circle"></i>
+            </li>
+            <li>
+                <a href="#">Blank Page</a>
+            </li> -->
+            <!-- </ul> -->
+            <!-- END PAGE BREADCRUMB -->
+            <!-- END PAGE HEADER-->
+            <!-- BEGIN PAGE CONTENT-->
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Page content goes here -->
+                    <!-- BEGIN WORLD PORTLET-->
+                    <div class="portlet box">
+                        <div class="portlet-body">
+                            <div id="vmap_world" class="Charts" style="height: 50em;">
+                                <div id="world_chart" style="width:100%;height:50em;margin: auto;"></div>
+                                <!-- <div id="main" style="width:1200px;height:800px;"></div> -->
+                            </div>
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <!-- Page content goes here -->
+                    <!-- BEGIN WORLD PORTLET-->
+                    <div class="portlet box" style="background-color: #fff0;">
+                        <div class="portlet-body">
+                            <div id="vmap_world" class="vmaps" style="height: 55em;">
+                                <!-- <img src="../assets/admin/layout4/img/词云.png" /> -->
+                                <div id="wordsCloud" style="width: 100%; height: 100%;">
+                                    <div id="virus"
+                                         style="width: 65%; height: 65%; float: left; margin-left: 20%;">
+                                    </div>
+                                    <div id="COVID" style="width: 100%; height: 50%; float: left;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END WORLD PORTLET-->
+                </div>
+                <div class="col-md-6">
+                    <div class="portlet box" style="background-color: #fff0;">
+                        <div class="portlet-body">
+                            <div id="vmap_world" class="Charts" style="height: 55em;">
+                                <div id="line_chart" style="width:100%;height:55em;margin: auto;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-bar-chart theme-font-color hide"></i>
+                                <span class="caption-subject theme-font-color bold uppercase">治愈率</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="row list-separated">
+                                <div id="Cure_rate" style="width: 100%;height:680%; margin:auto;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <!-- BEGIN PORTLET-->
+                    <div class="portlet light ">
+                        <div class="portlet-title">
+                            <div class="caption caption-md">
+                                <i class="icon-bar-chart theme-font-color hide"></i>
+                                <span class="caption-subject theme-font-color bold uppercase">死亡率</span>
+                            </div>
+                        </div>
+                        <div class="portlet-body">
+                            <div class="row list-separated">
+                                <div id="mortality_rate" style="width: 100%;height:680%; margin:auto;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET-->
+                </div>
+
+<!--                <div class="col-md-6">-->
+<!--                    <div class="portlet box grey-cascade">-->
+<!--                        <div class="portlet-body">-->
+<!--                            <div class="tabbable tabs-left">-->
+<!--                                <ul class="nav nav-tabs">-->
+<!--                                    <li class="active">-->
+<!--                                        <a href="#tab_6_1" data-toggle="tab">-->
+<!--                                            CURE_RATE </a>-->
+<!--                                    </li>-->
+<!--                                    <li>-->
+<!--                                        <a href="#tab_6_2" data-toggle="tab">-->
+<!--                                            MORTALITY_RATE </a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                                <div class="tab-content">-->
+<!--                                    <div class="tab-pane active" id="tab_6_1">-->
+<!--                                        <div id="Cure_rate" style="width: 100%; height: 40em"></div>-->
+<!--                                    </div>-->
+<!--                                    <div class="tab-pane fade" id="tab_6_2">-->
+<!--                                        <div id="mortality_rate" style="width: 100%;; height: 40em"></div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        &lt;!&ndash; </div> &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div>-->
+
+            </div>
+
+
+            <!-- END PAGE CONTENT-->
+        </div>
+    </div>
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+        回到页首
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Chart1
+    setTimeout(worldMap, 1000);
+
+    function worldMap() {
+        var days1 = [];
+        var country1 = [];
+        var data1 = [];
+        var xmlHTTP1 = new XMLHttpRequest();
+
+        var temp = [];
+        xmlHTTP1.onreadystatechange = function (ev) {
+            var myChart1 = echarts.init(document.getElementById('world_chart'));
+            myChart1.showLoading({
+                text: '数据正在努力加载...',
+                textStyle: {fontSize: 30, color: '#444'},
+                effectOption: {backgroundColor: 'rgba(0, 0, 0, 0)'}
+            });
+            if (xmlHTTP1.readyState == 4 && xmlHTTP1.status == 200) {
+                var rep = JSON.parse(xmlHTTP1.responseText);
+                for (var i = 0; i < rep.length; i++) {
+                    if (days1.indexOf(rep[i].date) == -1) {
+                        days1.push(rep[i].date);
+                    }
+                    if (country1.indexOf(rep[i].name) == -1) {
+                        country1.push(rep[i].name);
+                    }
+                    temp.push(rep[i].value);
+                    if (temp.length == 187) {
+                        data1.push(temp);
+                        temp = [];
+                    }
+                }
+                myChart1.hideLoading();
+                option1 = {
+                    baseOption: {
+                        //时间轴
+                        timeline: {
+                            axisType: 'category',
+                            // realtime: false,
+                            // loop: false,
+                            autoPlay: true,
+                            playInterval: 500, //0.5s滚动一次
+                            // realtime = true,
+                            symbolSize: 1,
+                            left: '5%',
+                            right: '5%',
+                            bottom: '0%',
+                            width: '90%',
+                            // itemStyle: {
+                            //     borderWidth: 0
+                            // },
+                            // controlStyle: {
+                            //     show: false
+                            // },
+                            data: days1,
+                            tooltip: {
+                                formatter: days1
+                            },
+                        },
+
+                        tooltip: {
+                            show: true,
+                            formatter: function (params) {
+                                return params.name + '：' + params.value
+                            },
+                        },
+                        //热力地图设置此处可设置热力地图的颜色和变化范围
+                        visualMap: {
+                            type: 'piecewise',
+                            pieces: [{
+                                min: 100001,
+                                color: '#BB0000'
+                            },
+                                {
+                                    min: 50001,
+                                    max: 100000,
+                                    color: '#C62B2B' // #73240D
+                                },
+                                {
+                                    min: 25001,
+                                    max: 50000,
+                                    color: '#D25555'
+                                },
+                                {
+                                    min: 1001,
+                                    max: 25000,
+                                    color: '#DD8080'
+                                },
+                                {
+                                    min: 11,
+                                    max: 1000,
+                                    color: '#E8AAAA'
+                                },
+                                {
+                                    min: 1,
+                                    max: 10,
+                                    color: '#F4D5D5'
+                                },
+                                {
+                                    value: 0,
+                                    color: 'white'
+                                }
+                            ],
+                            orient: 'vertical',
+                            itemWidth: 25,
+                            itemHeight: 15,
+                            showLabel: true,
+                            seriesIndex: [0],
+
+                            textStyle: {
+                                color: '#7B93A7'
+                            },
+                            bottom: '10%',
+                            left: "5%",
+                        },
+                        //图的相对位置
+                        grid: {
+                            right: '5%',
+                            top: '20%',
+                            bottom: '10%',
+                            width: '20%'
+                        },
+                        //右部柱状图的显示范围
+                        xAxis: {
+                            'type': 'log',
+                            // min: 0,
+                            // max: 1000000,
+                            show: false
+                        },
+                        yAxis: [{
+                            inverse: true,
+                            offset: '2',
+                            'type': 'category',
+                            data: '',
+                            nameTextStyle: {
+                                color: '#fff'
+                            },
+                            axisTick: {
+                                show: false,
+                            },
+                            axisLabel: {
+                                //rotate:45,
+                                textStyle: {
+                                    fontSize: 14,
+                                    color: '#000000',
+                                },
+                                interval: 0
+                            },
+                            axisLine: {
+                                show: false,
+                                lineStyle: {
+                                    color: '#333'
+                                },
+                            },
+                            splitLine: {
+                                show: false,
+                                lineStyle: {
+                                    color: '#333'
+                                }
+                            },
+                        }],
+                        geo: {
+                            map: 'world',
+                            right: '35%',
+                            left: '5%',
+                            label: {
+                                emphasis: {
+                                    show: false,
+                                }
+                            },
+                            itemStyle: {
+                                emphasis: {
+                                    areaColor: '#90EE90'
+                                }
+                            }
+                        },
+                        series: [{
+                            name: 'mapSer',
+                            type: 'map',
+                            map: 'world',
+                            roam: false,
+                            geoIndex: 0,
+                            label: {
+                                show: false,
+                            },
+                        },
+                            {
+                                'name': '',
+                                'type': 'bar',
+                                zlevel: 2,
+                                barWidth: '40%',
+                                label: {
+                                    normal: {
+                                        show: true,
+                                        fontSize: 14,
+                                        position: 'right',
+                                        formatter: '{c}'
+                                    }
+                                },
+                            }
+                        ],
+
+                    },
+                    animationDurationUpdate: 3000,
+                    animationEasingUpdate: 'quinticInOut',
+                    options: []
+                };
+                // 从所有数据中筛选出当日最高的10个
+                for (var n = 0; n < days1.length; n++) {
+
+                    var res = [];
+                    for (j = 0; j < data1[n].length; j++) {
+                        res.push({
+                            name: country1[j],
+                            value: data1[n][j]
+                        });
+                    }
+                    res.sort(function (a, b) {
+                        return b.value - a.value;
+                    }).slice(0, 6);
+
+                    res.sort(function (a, b) {
+                        return a.value - b.value;
+                    });
+                    var res1 = [];
+                    var res2 = [];
+                    for (t = 0; t < 10; t++) {
+                        res1[t] = res[res.length - 1 - t].name;
+                        res2[t] = res[res.length - 1 - t].value;
+                    }
+                    // console.log(res1);
+                    // console.log("----------------");
+                    // console.log(country1);
+                    option1.options.push({
+                        title: [{
+                            text: "世界疫情地图",
+                            textStyle: {
+                                color: '#2D3E53',
+                                fontSize: 28
+                            },
+                            // left:'30%',
+                            top: 20,
+                            x: 'center'
+                        },
+                            {
+                                show: true,
+                                text: '感染人数前10的国家或地区',
+                                textStyle: {
+                                    color: '#2D3E53',
+                                    fontSize: 18
+                                },
+                                right: '1%',
+                                top: '15%'
+                            }
+                        ],
+                        yAxis: {
+                            data: res1,
+                        },
+                        series: [{
+                            type: 'map',
+                            data: res
+                        }, {
+                            type: 'bar',
+                            data: res2,
+                            // 色彩方案1-------------------------------------------------------------------------
+                            itemStyle: {
+                                normal: {
+                                    //这里是重点
+                                    color: function (params) {
+                                        //注意，如果颜色太少的话，后面颜色不会自动循环，最好多定义几个颜色
+                                        var colorList = ['#BB0000', '#C21A1A', '#C93333', '#CF4D4D', '#D66666', '#DD8080', '#E49999', '#EBB3B3', '#F1CCCC', '#F8E6E6'];
+                                        return colorList[params.dataIndex]
+                                    }
+                                }
+                            }
+
+                            // 色彩方案2-------------------------------------------------------------------------
+                            // itemStyle: {
+                            //     normal: {
+                            //         color: function (params) {
+                            //             // 设置柱状图的颜色
+                            //             var colorList = [{
+                            //                 colorStops: [{
+                            //                     offset: 0,
+                            //                     color: '#990000' // 0% 处的颜色 #FF0000
+                            //                 }, {
+                            //                     offset: 1,
+                            //                     color: '#990000' // 100% 处的颜色 #990000
+                            //                 }]
+                            //             },
+                            //             {
+                            //                 colorStops: [{
+                            //                     offset: 0,
+                            //                     color: '#E9B090' // 0% 处的颜色 #00C0FA
+                            //                 }, {
+                            //                     offset: 1,
+                            //                     color: '#E9B090' // 100% 处的颜色 #2F95FA
+                            //                 }]
+                            //             }
+                            //             ];
+                            //             if (params.dataIndex < 3) {  //前3名用colorList[0]中的颜色，后面的用colorList[1]中的颜色
+                            //                 return colorList[0]
+                            //             } else {
+                            //                 return colorList[1]
+                            //             }
+                            //         },
+                            //     }
+                            // },
+                        }]
+                    });
+                }
+
+                myChart1.setOption(option1);
+                window.addEventListener("resize", () => {
+                    myChart1.resize();
+                });
+                console.log(days1);
+                console.log(country1);
+                console.log(data1);
+            }
+        }
+        xmlHTTP1.open('GET', '/uv/worldData', true);
+        xmlHTTP1.send();
+    }
+
+    // Chart 1.5
+    onload = function () {
+        var data_COVID = {
+            value: [{"name": "virus", "value": 114648}, {
+                "name": "respiratory",
+                "value": 52551
+            }, {"name": "infection", "value": 43717}, {
+                "name": "influenza",
+                "value": 32720
+            }, {"name": "human", "value": 28773}, {
+                "name": "coronavirus",
+                "value": 27090
+            }, {"name": "viral", "value": 26149}, {
+                "name": "disease",
+                "value": 20252
+            }, {"name": "protein", "value": 18520}, {
+                "name": "viruses",
+                "value": 18440
+            }, {"name": "analysis", "value": 17849}, {
+                "name": "health",
+                "value": 15363
+            }, {"name": "infectious", "value": 15102}, {
+                "name": "cells",
+                "value": 14477
+            }, {"name": "novel", "value": 14185}, {
+                "name": "cell",
+                "value": 13537
+            }, {"name": "study", "value": 13429}, {
+                "name": "based",
+                "value": 11994
+            }, {"name": "syndrome", "value": 11517}, {
+                "name": "rna",
+                "value": 11449
+            }, {"name": "detection", "value": 11281}, {
+                "name": "infections",
+                "value": 11180
+            }, {"name": "acute", "value": 10319}, {
+                "name": "china",
+                "value": 9769
+            }, {"name": "clinical", "value": 9198}, {
+                "name": "sars",
+                "value": 9135
+            }, {"name": "porcine", "value": 8792}, {
+                "name": "during",
+                "value": 8730
+            }, {"name": "open", "value": 8546}, {
+                "name": "as",
+                "value": 8423
+            }, {"name": "patients", "value": 8362}, {
+                "name": "diseases",
+                "value": 8332
+            }, {"name": "using", "value": 8180}, {
+                "name": "against",
+                "value": 8120
+            }, {"name": "host", "value": 7910}, {
+                "name": "associated",
+                "value": 7672
+            }, {"name": "response", "value": 7642}, {
+                "name": "epidemic",
+                "value": 7088
+            }, {"name": "vaccine", "value": 6463}, {
+                "name": "review",
+                "value": 6435
+            }, {"name": "expression", "value": 5886}, {
+                "name": "cov",
+                "value": 5778
+            }, {"name": "children", "value": 5590}, {
+                "name": "molecular",
+                "value": 5511
+            }, {"name": "transmission", "value": 5431}, {
+                "name": "east",
+                "value": 5144
+            }, {"name": "immune", "value": 5144}, {
+                "name": "induced",
+                "value": 5144
+            }, {"name": "middle", "value": 5041}, {
+                "name": "outbreak",
+                "value": 4887
+            }, {"name": "replication", "value": 4811}, {
+                "name": "emerging",
+                "value": 4660
+            }, {"name": "case", "value": 4461}, {
+                "name": "severe",
+                "value": 4411
+            }, {"name": "public", "value": 4338}, {
+                "name": "mers",
+                "value": 4265
+            }, {"name": "identification", "value": 4240}, {
+                "name": "antiviral",
+                "value": 4216
+            }, {"name": "gene", "value": 4216}, {
+                "name": "risk",
+                "value": 4120
+            }, {"name": "development", "value": 4120}, {
+                "name": "new",
+                "value": 4024
+            }, {"name": "type", "value": 3976}, {
+                "name": "potential",
+                "value": 3976
+            }, {"name": "research", "value": 3976}, {
+                "name": "genome",
+                "value": 3929
+            }, {"name": "characterization", "value": 3929}, {
+                "name": "pandemic",
+                "value": 3858
+            }, {"name": "model", "value": 3579}, {
+                "name": "diarrhea",
+                "value": 3579
+            }, {"name": "control", "value": 3556}, {
+                "name": "infected",
+                "value": 3533
+            }, {"name": "role", "value": 3510}, {
+                "name": "like",
+                "value": 3510
+            }, {"name": "data", "value": 3488}, {
+                "name": "activity",
+                "value": 3488
+            }, {"name": "surveillance", "value": 3442}, {
+                "name": "proteins",
+                "value": 3420
+            }, {"name": "among", "value": 3397}, {
+                "name": "system",
+                "value": 3375
+            }, {"name": "pneumonia", "value": 3352}, {
+                "name": "responses",
+                "value": 3307
+            }, {"name": "mice", "value": 3307}, {
+                "name": "mediated",
+                "value": 3240
+            }, {"name": "hiv", "value": 3196}, {
+                "name": "specific",
+                "value": 3152
+            }, {"name": "receptor", "value": 3108}, {
+                "name": "t",
+                "value": 3086
+            }, {"name": "non", "value": 3043}, {
+                "name": "c",
+                "value": 3043
+            }, {"name": "avian", "value": 3021}, {
+                "name": "interferon",
+                "value": 2913
+            }, {"name": "i", "value": 2849}, {
+                "name": "s",
+                "value": 2828
+            }, {"name": "evaluation", "value": 2807}, {
+                "name": "covid",
+                "value": 2702
+            }, {"name": "high", "value": 2702}, {
+                "name": "ebola",
+                "value": 2598
+            }, {"name": "time", "value": 2577}, {
+                "name": "h1n1",
+                "value": 2516
+            }, {"name": "antibody", "value": 2495}, {
+                "name": "care",
+                "value": 2495
+            }, {"name": "global", "value": 2475}, {
+                "name": "its",
+                "value": 2475
+            }, {"name": "pathogens", "value": 2475}, {
+                "name": "dna",
+                "value": 2455
+            }, {"name": "pcr", "value": 2394}, {
+                "name": "journal",
+                "value": 2334
+            }, {"name": "hepatitis", "value": 2295}, {
+                "name": "sequence",
+                "value": 2295
+            }, {"name": "binding", "value": 2295}, {
+                "name": "factors",
+                "value": 2255
+            }, {"name": "through", "value": 2216}, {
+                "name": "rapid",
+                "value": 2158
+            }, {"name": "epidemiology", "value": 2158}, {
+                "name": "b",
+                "value": 2138
+            }, {"name": "treatment", "value": 2081}, {
+                "name": "lung",
+                "value": 1967
+            }, {"name": "genetic", "value": 1892}, {
+                "name": "single",
+                "value": 1892
+            }, {"name": "information", "value": 1873}, {
+                "name": "cross",
+                "value": 1873
+            }, {"name": "antibodies", "value": 1855}, {
+                "name": "tract",
+                "value": 1818
+            }, {"name": "report", "value": 1818}, {
+                "name": "structure",
+                "value": 1782
+            }, {"name": "use", "value": 1782}, {
+                "name": "population",
+                "value": 1764
+            }, {"name": "acid", "value": 1764}, {
+                "name": "article",
+                "value": 1746
+            }, {"name": "fever", "value": 1728}, {
+                "name": "entry",
+                "value": 1728
+            }, {"name": "access", "value": 1728}, {
+                "name": "bmc",
+                "value": 1728
+            }, {"name": "effects", "value": 1674}, {
+                "name": "dengue",
+                "value": 1674
+            }, {"name": "feline", "value": 1638}, {
+                "name": "supplementary",
+                "value": 1621
+            }, {"name": "assay", "value": 1621}, {
+                "name": "dependent",
+                "value": 1621
+            }, {"name": "bacterial", "value": 1621}, {
+                "name": "impact",
+                "value": 1603
+            }, {"name": "title", "value": 1603}, {
+                "name": "sequencing",
+                "value": 1603
+            }, {"name": "early", "value": 1603}, {
+                "name": "mouse",
+                "value": 1568
+            }, {"name": "multiple", "value": 1533}, {
+                "name": "community",
+                "value": 1533
+            }, {"name": "pathogen", "value": 1516}, {
+                "name": "bronchitis",
+                "value": 1499
+            }, {"name": "strain", "value": 1499}, {
+                "name": "bats",
+                "value": 1499
+            }, {"name": "cellular", "value": 1499}, {
+                "name": "hospital",
+                "value": 1499
+            }, {"name": "immunity", "value": 1499}, {
+                "name": "5",
+                "value": 1499
+            }, {"name": "reveals", "value": 1482}, {
+                "name": "recombinant",
+                "value": 1465
+            }, {"name": "anti", "value": 1465}, {
+                "name": "bat",
+                "value": 1465
+            }, {"name": "that", "value": 1448}, {
+                "name": "vaccines",
+                "value": 1448
+            }, {"name": "related", "value": 1448}, {
+                "name": "two",
+                "value": 1448
+            }, {"name": "production", "value": 1448}, {
+                "name": "real",
+                "value": 1448
+            }, {"name": "species", "value": 1431}, {
+                "name": "targeting",
+                "value": 1431
+            }, {"name": "approach", "value": 1431}, {
+                "name": "evidence",
+                "value": 1431
+            }, {"name": "cancer", "value": 1431}, {
+                "name": "evolution",
+                "value": 1431
+            }, {"name": "via", "value": 1414}, {
+                "name": "genes",
+                "value": 1414
+            }, {"name": "structural", "value": 1397}, {
+                "name": "or",
+                "value": 1364
+            }, {"name": "signaling", "value": 1364}, {
+                "name": "membrane",
+                "value": 1364
+            }, {"name": "systematic", "value": 1347}, {
+                "name": "zika",
+                "value": 1347
+            }, {"name": "spike", "value": 1347}, {
+                "name": "different",
+                "value": 1347
+            }, {"name": "dynamics", "value": 1331}, {
+                "name": "domain",
+                "value": 1314
+            }, {"name": "medicine", "value": 1281}, {
+                "name": "korea",
+                "value": 1265
+            }, {"name": "effect", "value": 1249}, {
+                "name": "innate",
+                "value": 1201
+            }, {"name": "activation", "value": 1185}, {
+                "name": "molecules",
+                "value": 1185
+            }, {"name": "outbreaks", "value": 1185}, {
+                "name": "coronaviruses",
+                "value": 1169
+            }, {"name": "animal", "value": 1169}, {
+                "name": "pathogenesis",
+                "value": 1153
+            }, {"name": "medical", "value": 1153}, {
+                "name": "syncytial",
+                "value": 1137
+            }, {"name": "not", "value": 1137}, {
+                "name": "cases",
+                "value": 1137
+            }, {"name": "network", "value": 1122}],
+            //图片
+            image: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAQ4CAIAAABnsVYUAAAACXBIWXMAABcSAAAXEgFnn9JSAAAGXWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA2LTE2VDExOjM2OjQ1KzA4OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDIwLTA2LTE2VDExOjM2OjQ1KzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wNi0xNlQxMTozNjo0NSswODowMCIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1ZGUzOTk3ZC0xMmNmLTRmNDgtYWQ5MC0wYjY5ZGY2YTM2MmYiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyZWYwYjhkNi03MzdkLTQ4NDgtOGZlNy0wZTk3NjE2ZWU3YWYiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplNGE5Y2Y2ZC00NmQ5LTU2NDMtOTNmZS0wNDIwNDYwNmE5NGIiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIGRjOmZvcm1hdD0iaW1hZ2UvcG5nIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDplNGE5Y2Y2ZC00NmQ5LTU2NDMtOTNmZS0wNDIwNDYwNmE5NGIiIHN0RXZ0OndoZW49IjIwMjAtMDYtMTZUMTE6MzY6NDUrMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChXaW5kb3dzKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6NWRlMzk5N2QtMTJjZi00ZjQ4LWFkOTAtMGI2OWRmNmEzNjJmIiBzdEV2dDp3aGVuPSIyMDIwLTA2LTE2VDExOjM2OjQ1KzA4OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoV2luZG93cykiIHN0RXZ0OmNoYW5nZWQ9Ii8iLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDxwaG90b3Nob3A6VGV4dExheWVycz4gPHJkZjpCYWc+IDxyZGY6bGkgcGhvdG9zaG9wOkxheWVyTmFtZT0iQ09WSUQtMTkiIHBob3Rvc2hvcDpMYXllclRleHQ9IkNPVklELTE5Ii8+IDwvcmRmOkJhZz4gPC9waG90b3Nob3A6VGV4dExheWVycz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5PdVvnAAByv0lEQVR4nOzdX2ic950v/umhVyNbYIwUiyCQOhKLVtoIEajjsJOLymHbXqy9HW/ZUjssJ4tME9jSpgfH5pAmyyLX7KZLCk6x2PxYbJeW1tq1e9F2iRTYaInjQjD2kWqKpUrgC/tYGIP/zG1+F9Pjpo4sSzPPd77Pn9frynGlZ961NDPPvJ/v8/l+5uOPPy4BAAAAAEDS/kfsAAAAAAAA5JMCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQA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AAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAAAAAQhAIaAAAAAIAgFNAAAAAAAAShgAYAAAAAIAgFNAAAAAAAQSigAQAAAAAIQgENAAAAAEAQCmgAAAAAAIJQQAMAAAAAEIQCGgAAAACAIBTQAAAAAAAEoYAGAAAAACAIBTQAAAAAAEEooAEAAAAACEIBDQAAAABAEApoAAAAAACCUEADAAAAABCEAhoAAAAAgCAU0AAAAAAABKGABgAAAAAgCAU0AAAAAABBKKABAAAAAAhCAQ0AAAAAQBAKaAAAAAAAglBAAwAA/387diwAAAAAMMjfehT7CiMAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgIaAAAAAAAFgIaAAAAAICFgAYAAAAAYCGgAQAAAABYCGgAAAAAABYCGgAAAACAhYAGAAAAAGAhoAEAAAAAWAhoAAAAAAAWAhoAAAAAgIWABgAAAABgIaABAAAAAFgEYHBynvubbhoAAAAASUVORK5CYII="
+        }
+        var myChart_COVID = echarts.init(document.getElementById('COVID'));
+        //温馨提示：image 选取有严格要求不可过大；否则firefox不兼容 iconfont上面的图标可以
+        var maskImage_COVID = new Image();
+        maskImage_COVID.src = data_COVID.image
+
+        maskImage_COVID.onload = function () {
+            myChart_COVID.on('click', function (params) {
+                var name = params.name;
+                var value = params.value;
+                window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+            });
+            var Option_COVID = {
+                backgroundColor: '#fff',
+                tooltip: {
+                    show: false
+                },
+                series: [{
+                    type: 'wordCloud',
+                    gridSize: 1,
+                    sizeRange: [12, 55],
+                    rotationRange: [0, 90],
+                    maskImage: maskImage_COVID,
+                    textStyle: {
+                        //正常情况下的样式
+                        normal: {
+                            color: function () {
+                                if (Math.round(Math.random() * 1) == 0) {
+                                    return '#575757'
+                                } else {
+                                    return '#990000'
+                                }
+
+                            }
+                        },
+                        //鼠标悬浮时的样式
+                        emphasis: {
+                            fontWeight: 'bolder',
+                            fontSize: 30,
+                            color: '#00467A'
+                        }
+                    },
+                    left: 'center',
+                    // top: 'center',
+                    // width: '96%',
+                    // height: '100%',
+                    // right: null,
+                    // bottom: null,
+                    // width: 300,
+                    // height: 200,
+                    // top: 20,
+                    data: data_COVID.value
+                }]
+            }
+            myChart_COVID.setOption(Option_COVID);
+            window.addEventListener("resize", () => {
+                myChart_COVID.resize();
+            });
+        }
+
+
+        var data_virus = {
+            value: [{"name": "virus", "value": 114648}, {
+                "name": "respiratory",
+                "value": 52551
+            }, {"name": "infection", "value": 43717}, {
+                "name": "influenza",
+                "value": 32720
+            }, {"name": "human", "value": 28773}, {
+                "name": "coronavirus",
+                "value": 27090
+            }, {"name": "viral", "value": 26149}, {
+                "name": "disease",
+                "value": 20252
+            }, {"name": "protein", "value": 18520}, {
+                "name": "viruses",
+                "value": 18440
+            }, {"name": "analysis", "value": 17849}, {
+                "name": "health",
+                "value": 15363
+            }, {"name": "infectious", "value": 15102}, {
+                "name": "cells",
+                "value": 14477
+            }, {"name": "novel", "value": 14185}, {
+                "name": "cell",
+                "value": 13537
+            }, {"name": "study", "value": 13429}, {
+                "name": "based",
+                "value": 11994
+            }, {"name": "syndrome", "value": 11517}, {
+                "name": "rna",
+                "value": 11449
+            }, {"name": "detection", "value": 11281}, {
+                "name": "infections",
+                "value": 11180
+            }, {"name": "acute", "value": 10319}, {
+                "name": "china",
+                "value": 9769
+            }, {"name": "clinical", "value": 9198}, {
+                "name": "sars",
+                "value": 9135
+            }, {"name": "porcine", "value": 8792}, {
+                "name": "during",
+                "value": 8730
+            }, {"name": "open", "value": 8546}, {
+                "name": "as",
+                "value": 8423
+            }, {"name": "patients", "value": 8362}, {
+                "name": "diseases",
+                "value": 8332
+            }, {"name": "using", "value": 8180}, {
+                "name": "against",
+                "value": 8120
+            }, {"name": "host", "value": 7910}, {
+                "name": "associated",
+                "value": 7672
+            }, {"name": "response", "value": 7642}, {
+                "name": "epidemic",
+                "value": 7088
+            }, {"name": "vaccine", "value": 6463}, {
+                "name": "review",
+                "value": 6435
+            }, {"name": "expression", "value": 5886}, {
+                "name": "cov",
+                "value": 5778
+            }, {"name": "children", "value": 5590}, {
+                "name": "molecular",
+                "value": 5511
+            }, {"name": "transmission", "value": 5431}, {
+                "name": "east",
+                "value": 5144
+            }, {"name": "immune", "value": 5144}, {
+                "name": "induced",
+                "value": 5144
+            }, {"name": "middle", "value": 5041}, {
+                "name": "outbreak",
+                "value": 4887
+            }, {"name": "replication", "value": 4811}, {
+                "name": "emerging",
+                "value": 4660
+            }, {"name": "case", "value": 4461}, {
+                "name": "severe",
+                "value": 4411
+            }, {"name": "public", "value": 4338}, {
+                "name": "mers",
+                "value": 4265
+            }, {"name": "identification", "value": 4240}, {
+                "name": "antiviral",
+                "value": 4216
+            }, {"name": "gene", "value": 4216}, {
+                "name": "risk",
+                "value": 4120
+            }, {"name": "development", "value": 4120}, {
+                "name": "new",
+                "value": 4024
+            }, {"name": "type", "value": 3976}, {
+                "name": "potential",
+                "value": 3976
+            }, {"name": "research", "value": 3976}, {
+                "name": "genome",
+                "value": 3929
+            }, {"name": "characterization", "value": 3929}, {
+                "name": "pandemic",
+                "value": 3858
+            }, {"name": "model", "value": 3579}, {
+                "name": "diarrhea",
+                "value": 3579
+            }, {"name": "control", "value": 3556}, {
+                "name": "infected",
+                "value": 3533
+            }, {"name": "role", "value": 3510}, {
+                "name": "like",
+                "value": 3510
+            }, {"name": "data", "value": 3488}, {
+                "name": "activity",
+                "value": 3488
+            }, {"name": "surveillance", "value": 3442}, {
+                "name": "proteins",
+                "value": 3420
+            }, {"name": "among", "value": 3397}, {
+                "name": "system",
+                "value": 3375
+            }, {"name": "pneumonia", "value": 3352}, {
+                "name": "responses",
+                "value": 3307
+            }, {"name": "mice", "value": 3307}, {
+                "name": "mediated",
+                "value": 3240
+            }, {"name": "hiv", "value": 3196}, {
+                "name": "specific",
+                "value": 3152
+            }, {"name": "receptor", "value": 3108}, {
+                "name": "t",
+                "value": 3086
+            }, {"name": "non", "value": 3043}, {
+                "name": "c",
+                "value": 3043
+            }, {"name": "avian", "value": 3021}, {
+                "name": "interferon",
+                "value": 2913
+            }, {"name": "i", "value": 2849}, {
+                "name": "s",
+                "value": 2828
+            }, {"name": "evaluation", "value": 2807}, {
+                "name": "covid",
+                "value": 2702
+            }, {"name": "high", "value": 2702}, {
+                "name": "ebola",
+                "value": 2598
+            }, {"name": "time", "value": 2577}, {
+                "name": "h1n1",
+                "value": 2516
+            }, {"name": "antibody", "value": 2495}, {
+                "name": "care",
+                "value": 2495
+            }, {"name": "global", "value": 2475}, {
+                "name": "its",
+                "value": 2475
+            }, {"name": "pathogens", "value": 2475}, {
+                "name": "dna",
+                "value": 2455
+            }, {"name": "pcr", "value": 2394}, {
+                "name": "journal",
+                "value": 2334
+            }, {"name": "hepatitis", "value": 2295}, {
+                "name": "sequence",
+                "value": 2295
+            }, {"name": "binding", "value": 2295}, {
+                "name": "factors",
+                "value": 2255
+            }, {"name": "through", "value": 2216}, {
+                "name": "rapid",
+                "value": 2158
+            }, {"name": "epidemiology", "value": 2158}, {
+                "name": "b",
+                "value": 2138
+            }, {"name": "treatment", "value": 2081}, {
+                "name": "lung",
+                "value": 1967
+            }, {"name": "genetic", "value": 1892}, {
+                "name": "single",
+                "value": 1892
+            }, {"name": "information", "value": 1873}, {
+                "name": "cross",
+                "value": 1873
+            }, {"name": "antibodies", "value": 1855}, {
+                "name": "tract",
+                "value": 1818
+            }, {"name": "report", "value": 1818}, {
+                "name": "structure",
+                "value": 1782
+            }, {"name": "use", "value": 1782}, {
+                "name": "population",
+                "value": 1764
+            }, {"name": "acid", "value": 1764}, {
+                "name": "article",
+                "value": 1746
+            }, {"name": "fever", "value": 1728}, {
+                "name": "entry",
+                "value": 1728
+            }, {"name": "access", "value": 1728}, {
+                "name": "bmc",
+                "value": 1728
+            }, {"name": "effects", "value": 1674}, {
+                "name": "dengue",
+                "value": 1674
+            }, {"name": "feline", "value": 1638}, {
+                "name": "supplementary",
+                "value": 1621
+            }, {"name": "assay", "value": 1621}, {
+                "name": "dependent",
+                "value": 1621
+            }, {"name": "bacterial", "value": 1621}, {
+                "name": "impact",
+                "value": 1603
+            }, {"name": "title", "value": 1603}, {
+                "name": "sequencing",
+                "value": 1603
+            }, {"name": "early", "value": 1603}, {
+                "name": "mouse",
+                "value": 1568
+            }, {"name": "multiple", "value": 1533}, {
+                "name": "community",
+                "value": 1533
+            }, {"name": "pathogen", "value": 1516}, {
+                "name": "bronchitis",
+                "value": 1499
+            }, {"name": "strain", "value": 1499}, {
+                "name": "bats",
+                "value": 1499
+            }, {"name": "cellular", "value": 1499}, {
+                "name": "hospital",
+                "value": 1499
+            }, {"name": "immunity", "value": 1499}, {
+                "name": "5",
+                "value": 1499
+            }, {"name": "reveals", "value": 1482}, {
+                "name": "recombinant",
+                "value": 1465
+            }, {"name": "anti", "value": 1465}, {
+                "name": "bat",
+                "value": 1465
+            }, {"name": "that", "value": 1448}, {
+                "name": "vaccines",
+                "value": 1448
+            }, {"name": "related", "value": 1448}, {
+                "name": "two",
+                "value": 1448
+            }, {"name": "production", "value": 1448}, {
+                "name": "real",
+                "value": 1448
+            }, {"name": "species", "value": 1431}, {
+                "name": "targeting",
+                "value": 1431
+            }, {"name": "approach", "value": 1431}, {
+                "name": "evidence",
+                "value": 1431
+            }, {"name": "cancer", "value": 1431}, {
+                "name": "evolution",
+                "value": 1431
+            }, {"name": "via", "value": 1414}, {
+                "name": "genes",
+                "value": 1414
+            }, {"name": "structural", "value": 1397}, {
+                "name": "or",
+                "value": 1364
+            }, {"name": "signaling", "value": 1364}, {
+                "name": "membrane",
+                "value": 1364
+            }, {"name": "systematic", "value": 1347}, {
+                "name": "zika",
+                "value": 1347
+            }, {"name": "spike", "value": 1347}, {
+                "name": "different",
+                "value": 1347
+            }, {"name": "dynamics", "value": 1331}, {
+                "name": "domain",
+                "value": 1314
+            }, {"name": "medicine", "value": 1281}, {
+                "name": "korea",
+                "value": 1265
+            }, {"name": "effect", "value": 1249}, {
+                "name": "innate",
+                "value": 1201
+            }, {"name": "activation", "value": 1185}, {
+                "name": "molecules",
+                "value": 1185
+            }, {"name": "outbreaks", "value": 1185}, {
+                "name": "coronaviruses",
+                "value": 1169
+            }, {"name": "animal", "value": 1169}, {
+                "name": "pathogenesis",
+                "value": 1153
+            }, {"name": "medical", "value": 1153}, {
+                "name": "syncytial",
+                "value": 1137
+            }, {"name": "not", "value": 1137}, {
+                "name": "cases",
+                "value": 1137
+            }, {"name": "network", "value": 1122}],
+            //图片
+            image: "data:image/png;base64,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"
+        }
+        var myChart_virus = echarts.init(document.getElementById('virus'));
+        //温馨提示：image 选取有严格要求不可过大；，否则firefox不兼容 iconfont上面的图标可以
+        var maskImage_virus = new Image();
+        maskImage_virus.src = data_virus.image
+
+        maskImage_virus.onload = function () {
+            //添加点击事件
+            myChart_virus.on('click', function (params) {
+                var name = params.name;
+                var value = params.value;
+                window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.name));
+            });
+            var Option_virus = {
+                backgroundColor: '#fff',
+                tooltip: {
+                    show: false
+                },
+                series: [{
+                    type: 'wordCloud',
+                    gridSize: 1,
+                    sizeRange: [12, 55],
+                    rotationRange: [0, -45, 45, 90],
+                    maskImage: maskImage_virus,
+                    // center : ['50%', '50%'],
+                    textStyle: {
+                        //正常情况下的样式
+                        normal: {
+                            color: function () {
+                                if (Math.round(Math.random() * 1) == 0) {
+                                    return '#575757'
+                                } else {
+                                    return '#990000'
+                                }
+
+                            }
+                        },
+                        //鼠标悬浮时的样式
+                        emphasis: {
+                            fontWeight: 'bolder',
+                            fontSize: 30,
+                            color: '#00467A'
+                        }
+                    },
+                    left: 'center',
+                    // top: 'center',
+                    // width: '96%',
+                    // height: '100%',
+                    // right: null,
+                    // bottom: null,
+                    // width: 300,
+                    // height: 200,
+                    // top: 20,
+                    data: data_virus.value
+                }]
+            }
+            myChart_virus.setOption(Option_virus);
+            window.addEventListener("resize", () => {
+                myChart_virus.resize();
+            });
+        }
+    }
+
+    // Chart2
+    setTimeout(cureRate, 1000);
+
+    function cureRate() {
+        var name_cure = [];
+        var cure_rate = [];
+        var xmlHTTP2 = new XMLHttpRequest();
+
+        xmlHTTP2.onreadystatechange = function (ev) {
+            if (xmlHTTP2.readyState == 4 && xmlHTTP2.status == 200) {
+                var rep = JSON.parse(xmlHTTP2.responseText);
+                for (var i = 0; i < rep.length; i++) {
+                    name_cure.push(rep[i].name);
+                    cure_rate.push(rep[i].value);
+                }
+            }
+            var myChart2 = echarts.init(document.getElementById('Cure_rate'));
+
+            var option2 = {
+                title: {
+                    text: '前十治愈率的国家或地区',
+                    subtext: '在感染率超过10,000的国家中排名',
+                    left: '30%'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                // legend: {
+                //   data: ['治愈率', '死亡率']
+                // },
+                grid: {
+                    left: '4%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    boundaryGap: [0, 0.01]
+                },
+                yAxis: {
+                    type: 'category',
+                    data: name_cure
+                },
+                series: [
+                    {
+                        name: '治愈率',
+                        type: 'bar',
+                        color: '#B8F2E6',
+                        barWidth: 20,
+                        data: cure_rate
+                    }
+                    // {
+                    //   name: '死亡率',
+                    //   type: 'bar',
+                    //   color: '#5E6472',
+                    //   data: [0.16137730066486913, 0.152467881948954, 0.1446883654750108, 0.1412415488629379, 0.1369150779896014, 0.12513673608387857, 0.11900816576350635, 0.11538461538461539, 0.11180559275175417, 0.1111111111111111]
+                    // }
+                ]
+            };
+            myChart2.setOption(option2);
+            window.addEventListener("resize", () => {
+                myChart2.resize();
+            });
+        }
+        xmlHTTP2.open('GET', '/uv/worldCure', true);
+        xmlHTTP2.send();
+    }
+
+    // Chart3
+    setTimeout(deathRate, 1000);
+
+    function deathRate() {
+        var name_death = [];
+        var death_rate = [];
+        var xmlHTTP3 = new XMLHttpRequest();
+
+        xmlHTTP3.onreadystatechange = function (ev) {
+            if (xmlHTTP3.readyState == 4 && xmlHTTP3.status == 200) {
+                var rep = JSON.parse(xmlHTTP3.responseText);
+                for (var i = 0; i < rep.length; i++) {
+                    name_death.push(rep[i].name);
+                    death_rate.push(rep[i].value);
+                }
+            }
+            var myChart3 = echarts.init(document.getElementById('mortality_rate'));
+
+            var option3 = {
+                title: {
+                    text: '前十死亡率的国家或地区',
+                    left: '30%'
+                    //subtext: '数据来自网络'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                // legend: {
+                //   data: ['治愈率', '死亡率']
+                // },
+                grid: {
+                    left: '4%',
+                    right: '4%',
+                    bottom: '3%',
+                    containLabel: true
+                },
+                xAxis: {
+                    type: 'value',
+                    boundaryGap: [0, 0.01]
+                },
+                yAxis: {
+                    type: 'category',
+                    data: name_death
+                },
+                series: [
+                    // {
+                    //   name: '治愈率',
+                    //   type: 'bar',
+                    //   color: '#B8F2E6',
+                    //   data: [0.145303626037571, 0.7227436823104693, 0.6851449617527623, 0.9154929577464789, 0.3474576271186441, 0.7692307692307693, 0.3043875351623863, 0.3726225373236076, 0.9304431334888188, 0.9363038628625103, 0.5550551677550102, 0.6601941747572816, 0.6892062158756825, 0.21456208681391892, 0.8645833333333334, 0.5141848077813803, 0.27554386963876004, 0.8, 0.6163934426229508, 0.3064516129032258, 0.14673677698731827, 0.7415254237288136, 0.5, 0.5355630346724329, 0.9787234042553191, 0.5469863901490603, 0.8856502242152466, 0.6346153846153846, 0.5294117647058824, 0.4474885844748858, 0.9920634920634921, 0.0, 0.0, 0.0194672131147541, 0.8325471698113207, 0.8205747215948913, 0.9075116367436117, 0.3963935174617667, 0.5987654320987654, 0.30357142857142855, 0.12558139534883722, 0.4694408322496749, 0.5022706630336058, 0.9479768786127167, 0.8530869761153673, 0.8276923076923077, 0.0, 0.9116347569955817, 0.5727603456116417, 0.8888888888888888, 0.5850165601530065, 0.4919441944194419, 0.26911846146100793, 0.44589386302994366, 0.15313935681470137, 0.9512195121951219, 0.8636132315521629, 0.5300668151447662, 0.16254681647940075, 1.0, 0.8776896942242356, 0.37543702887897223, 0.295697372220618, 0.7857142857142857, 0.8351383874849578, 0.9157431263424589, 0.3691832400077235, 0.44494818652849744, 1.0, 0.0, 0.18303936456021494, 0.6937328453796889, 0.1101511879049676, 0.5822784810126582, 0.006089824917533621, 1.0, 0.10914069630981875, 0.591978212428819, 0.9928057553956835, 0.4947149074898751, 0.3580110497237569, 0.7918859210906104, 0.3938830584707646, 0.8993581107853237, 0.8212612418547041, 0.7255719016523956, 0.6677577741407529, 0.8863094199103974, 0.7528089887640449, 0.6194492502883506, 0.33965785381026437, 0.6945701357466063, 0.7010048791821561, 0.7700831024930748, 0.0, 0.7477148080438757, 0.6027104136947218, 0.5, 0.5024390243902439, 0.15012722646310434, 0.6707317073170732, 0.7831050228310502, 0.9649555774925962, 0.2593516209476309, 0.11434511434511435, 0.8441868801529454, 0.583502024291498, 0.5743321718931476, 0.9375, 0.17373175816539263, 0.9643916913946587, 0.725498977413528, 0.5660482893632889, 0.9393939393939394, 0.48223350253807107, 0.9722222222222222, 0.8882511420873843, 0.0, 0.5483870967741935, 0.18660598179453836, 0.0035912571463953273, 0.9853723404255319, 0.6509562841530054, 0.9014373716632443, 0.3087810911089735, 0.47540983606557374, 0.9453996282527881, 0.33191340082189036, 0.31959057594117507, 0.5906058323469278, 1.0, 0.5073170731707317, 0.4768841834739371, 0.21365046535677354, 0.485656537002234, 0.6126984126984127, 0.68376603482037, 0.7215088282504013, 0.5194280589876444, 0.6336032388663968, 1.0, 0.9473684210526315, 0.9259259259259259, 0.7178002894356006, 0.2310126582278481, 0.6896941071013006, 0.6291237654969531, 0.9388530821351843, 1.0, 0.591705069124424, 0.6927666488943053, 0.9143413367942894, 0.9133064516129032, 0.2116991643454039, 0.5677503073350635, 0.8888611180538198, 0.0, 0.619578339314482, 0.6126798082045818, 0.3384843982169391, 0.05357142857142857, 0.0, 0.9277155005798222, 0.0, 0.9729119638826185, 0.0, 0.35952848722986247, 0.95584, 0.0, 0.517175572519084, 0.9316239316239316, 0.9098436062557498, 0.8496578038535136, 0.26702883884968814, 0.23711340206185566, 0.4592338248165354, 0.6156736446591519, 0.004363859864781807, 0.911452184179457, 0.767137734655136, 0.1730632551528074, 0.9668674698795181, 0.8418891170431212, 0.6666666666666666, 0.0, 0.76, 0.1536144578313253]
+                    // }
+                    {
+                        name: '死亡率',
+                        type: 'bar',
+                        color: '#5E6472',
+                        barWidth: 20,
+                        data: death_rate
+                    }
+                ]
+            };
+
+            myChart3.setOption(option3);
+            window.addEventListener("resize", () => {
+                myChart3.resize();
+            });
+        }
+        xmlHTTP3.open('GET', '/uv/worldDeath', true);
+        xmlHTTP3.send();
+    }
+
+    // Chart4
+    setTimeout(lineChart, 1000);
+
+    function lineChart() {
+        var total_people = [];
+        var death_toll = [];
+        var number_of_cured = [];
+        var new_daily = [];
+        var date_toll = [];
+
+        var xmlHTTP4 = new XMLHttpRequest();
+        xmlHTTP4.onreadystatechange = function (ev) {
+            if (xmlHTTP4.readyState == 4 && xmlHTTP4.status == 200) {
+                var rep = JSON.parse(xmlHTTP4.responseText);
+                for (var i = 0; i < rep.length; i++) {
+                    total_people.push(rep[i].death_toll);
+                    death_toll.push(rep[i].total_death);
+                    number_of_cured.push(rep[i].number_of_cured);
+                    new_daily.push(rep[i].new_daily);
+                    date_toll.push(rep[i].date);
+                }
+                // 基于准备好的dom，初始化echarts实例
+                var myChart4 = echarts.init(document.getElementById('line_chart'));
+                //表格设定
+                var word_linechart = {
+                    title: {
+                        text: '世界疫情折现图',
+                        left: '33%'
+                    },
+                    tooltip: {
+                        trigger: 'axis'
+                    },
+                    legend: {
+                        data: ['total people', 'death toll', 'Number of cured', 'New daily'],
+                        left: '20%',
+                        top: '10%',
+                    },
+                    grid: {
+                        top: '25%',
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    toolbox: {
+                        feature: {
+                            saveAsImage: {}
+                        }
+                    },
+                    xAxis: {
+                        type: 'category',
+                        boundaryGap: false,
+                        data: date_toll
+                    },
+                    yAxis: {
+                        type: 'value'
+                    },
+                    color: ['#BB0000', '#666666', '#03A89E', '#FF8000'],
+                    series: [
+                        {
+                            name: 'total people',
+                            type: 'line',
+                            smooth: true,
+                            // areaStyle: {},
+                            symbol: 'none',
+                            // stack: '总量',
+                            data: total_people
+                        },
+                        {
+                            name: 'death toll',
+                            type: 'line',
+                            smooth: true,
+                            // areaStyle: {},
+                            symbol: 'none',
+                            // stack: '总量',
+                            data: death_toll
+                        },
+                        {
+                            name: 'Number of cured',
+                            type: 'line',
+                            smooth: true,
+                            // areaStyle: {},
+                            symbol: 'none',
+                            // stack: '总量',
+                            data: number_of_cured
+                        },
+                        {
+                            name: 'New daily',
+                            type: 'line',
+                            smooth: true,
+                            // areaStyle: {},
+                            symbol: 'none',
+                            // stack: '总量',
+                            data: new_daily
+                        }
+                    ]
+                };
+                myChart4.setOption(word_linechart);
+                window.addEventListener("resize", () => {
+                    myChart4.resize();
+                });
+            }
+        }
+        xmlHTTP4.open('GET', '/uv/worldLineChart', true);
+        xmlHTTP4.send();
+    }
+</script>
+
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        Demo.init(); // init demo features
+    });
+</script>
+<!-- END JAVASCRIPTS -->
+<script type="text/javascript" src="../assets/global/scripts/canvas-nest.js"></script>
+<canvas id="c_n1"></canvas>
+</body>
+<!-- END BODY -->
+
+</html>

@@ -14,7 +14,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/uv")
-public class WorldDaysController {
+class WorldDaysController {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

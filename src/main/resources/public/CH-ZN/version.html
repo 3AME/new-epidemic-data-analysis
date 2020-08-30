@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>疫情数据分析 | 历史版本</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css" />
+    <link href="../assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css" />
+    <link id="style_color" href="../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="../assets/admin/layout4/css/timeline.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/world.js"></script>
+    <script type="text/javascript" src="../assets/admin/layout4/scripts/timeline.js"></script>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+<!-- BEGIN HEADER -->
+<div style="margin-top: 10px;" class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html" style="font-size: 18px;margin-top: 18px;">
+                <img style="width: 8em;height: 3em;" src="../assets/admin/layout4/icons/logo_1.2.png" alt="logo"
+                     class="logo-default" />
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+           data-target=".navbar-collapse">
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+        </div>
+        <button style="float: right;margin-top: 2%;margin-right: 1%;"><a href="../ENGLISH/version.html">English</a></button>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+    <!-- END PAGE TOP -->
+</div>
+<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse" style="color: black;margin-top: 50px;">
+            <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true"
+                data-slide-speed="200">
+                <li class="start ">
+                    <a href="index.html">
+                        <!-- <i class="icon-home"></i> -->
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/home.png" />
+                        <span class="title">主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="world_epidemic_situation.html"><img style="width: 20px;height: 20px;"
+                                                                 src="../assets/admin/layout4/icons/world.png" />
+                        <span class="title">世界疫情情况</span> </a>
+                    <!-- <a  href="world_epidemic_situation.html">
+                        World epidemic situation</a> -->
+                </li>
+                <li>
+                    <a href="CHINA.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/中国地图.png" />
+                        <span class="title">中国疫情情况 </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="US.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/美国 (1).png" />
+                        <span class="title">美国疫情情况</span></a>
+                </li>
+                <li>
+                    <a href="Analysis_and_forecasting.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/国家（pitch on）.png" />
+                        <span class="title">分析与预测</span> </a>
+                </li>
+                <li>
+                    <a href="public_opinion_and_epidemic_situation.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/virus.png" />
+                        <span class="title">疫情新闻</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="version.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/历史.png" />
+                        <span class="title">历史版本</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/about us.png" />
+                        <span class="title">关于我们</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+            </div>
+            <!-- /.modal -->
+            <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+            <!-- BEGIN PAGE HEADER-->
+            <!-- BEGIN PAGE HEAD -->
+            <div class="page-head">
+                <!-- BEGIN PAGE TITLE -->
+                <div class="page-title">
+                    <h1>历史版本<small> 历史版本</small></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="portlet box">
+                        <div class="portlet-body">
+                            <div class="portlet light">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-cogs font-red-sunglo"></i>
+                                        <span class="caption-subject font-red-sunglo bold uppercase">
+                                                版本 </span>
+                                    </div>
+                                </div>
+                                <span class="caption-subject font-red-sunglo bold uppercase">
+                                        版本 1</span>
+                                <div class="portlet-body">
+                                    <div class="note note-success">
+                                        <h4 class="block">1.0.0.20200616</h4>
+                                        <p>
+                                            初始化项目
+                                        </p>
+                                        <h4 class="block">1.0.1.20200616</h4>
+                                        <p>
+                                            增加readme文件
+                                        </p>
+                                        <h4 class="block">1.0.1.20200616</h4>
+                                        <p>
+                                            修改readme文件
+                                        </p>
+                                        <h4 class="block">1.0.2.20200616</h4>
+                                        <p>
+                                            添加代码块
+                                        </p>
+                                        <h4 class="block">1.0.3.20200616</h4>
+                                        <p>
+                                            reademe添加GitHub基本用法+git用法
+                                        </p>
+                                        <h4 class="block">1.0.4.20200616</h4>
+                                        <p>
+                                            修改reademe格式
+                                        </p>
+                                        <h4 class="block">1.0.5.20200616</h4>
+                                        <p>
+                                            修改reademe格式
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="caption-subject font-red-sunglo bold uppercase">
+                                        版本 3</span>
+                                <div class="portlet-body">
+                                    <div class="note note-warning">
+                                        <h4 class="block">3.0.0.20200622 </h4>
+                                        <P>中国地图，治愈率，死亡率增加，玫瑰森伯斯特地图增加，显示词云;世界死亡率治愈率，折线图布局修改</P>
+                                        <h4 class="block">3.1.1.20200622</h4>
+                                        <p>
+                                            1.优化的世界流行病地图和中国流行病地图<br>
+                                            2.添加了美国流行病地图
+                                        </p>
+                                        <h4 class="block">3.2.2.20200622</h4>
+                                        <p>
+                                            修改由分辨率引起的界面问题，更新世界，中国和美国的时空图
+                                        </p>
+                                        <h4 class="block">3.3.3.20200623</h4>
+                                        <p>
+                                            1.更新的美国死亡率直方图<br>
+                                            2.更新了美国新情况的散点图<br>
+                                            3.微调朝阳图<br>
+                                        </p>
+                                        <h4 class="block">3.4.4.20200623</h4>
+                                        <p>
+                                            美国每周增长，死亡率增加echart
+                                        </p>
+                                        <h4 class="block">3.5.5.20200624</h4>
+                                        <p>
+                                            1.中国新增散点图<br>
+                                            2.中美疫情趋势新增折线图
+                                        </p>
+                                        <h4 class="block">3.6.6.20200625</h4>
+                                        <p>
+                                            添加了随着时间推移情绪分析趋势的注释饼图
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="caption-subject font-red-sunglo bold uppercase">
+                                        版本 4</span>
+                                <div class="portlet-body">
+                                    <div class="note note-danger">
+                                        <h4 class="block">4.0.0.20200625</h4>
+                                        <p>
+                                            前端布局优化
+                                        </p>
+                                        <h4 class="block">4.0.1.20200625</h4>
+                                        <p>
+                                            图像尺寸修改
+                                        </p>
+                                        <h4 class="block">4.0.2.20200625</h4>
+                                        <p>
+                                            添加首页图片，修改蓝色边框
+                                        </p>
+                                        <h4 class="block">4.0.3.20200626</h4>
+                                        <p>
+                                            微调评论情绪饼图
+                                        </p>
+                                        <h4 class="block">4.0.4.20200626</h4>
+                                        <p>
+                                            微调中国的流行病图以解决遮挡问题数据
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="portlet box">
+                        <div class="portlet-body">
+                            <div class="portlet light">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-cogs font-red-sunglo"></i>
+                                        <span class="caption-subject font-red-sunglo bold uppercase">
+                                                版本 </span>
+                                    </div>
+                                </div>
+                                <span class="caption-subject font-red-sunglo bold uppercase">
+                                        版本 2</span>
+                                <div class="portlet-body">
+                                    <div class="note note-info">
+                                        <h4 class="block">2.0.0.20200617</h4>
+                                        <p>
+                                            中国疫情的分布
+                                        </p>
+                                        <h4 class="block">2.0.1.20200617</h4>
+                                        <p>
+                                            更新两个词云和一个折线图
+                                        </p>
+                                        <h4 class="block">2.1.2.20200617</h4>
+                                        <p>
+                                            页面框架建设基本完成+关于我们
+                                        </p>
+                                        <h4 class="block">2.1.3.20200617</h4>
+                                        <p>
+                                            更新js库
+                                        </p>
+                                        <h4 class="block">2.1.4.20200617</h4>
+                                        <p>
+                                            修改菜单并添加covid-19词云。问题：一页不能显示两个echart
+                                        </p>
+                                        <h4 class="block">2.1.5.20200617</h4>
+                                        <p>
+                                            在首页+文字云上添加图标（covid和病毒不能同时显示问题）
+                                        </p>
+                                        <h4 class="block">2.1.6.20200617</h4>
+                                        <p>
+                                            词云显示问题解决，onload问题
+                                        </p>
+                                        <h4 class="block">2.2.7.20200618</h4>
+                                        <p>
+                                            添加菜单图标，关于我们添加，一些国家疫情框架
+                                        </p>
+                                        <h4 class="block">2.3.8.20200618</h4>
+                                        <p>
+                                            增加了舆论和疫情的界面
+                                        </p>
+                                        <h4 class="block">2.3.9.20200618</h4>
+                                        <p>
+                                            更新代码分析插件
+                                        </p>
+                                        <h4 class="block">2.4.10.20200619</h4>
+                                        <p>
+                                            添加了治愈率和死亡率的top10直方图，修改了几个世界流行地图上的错误，并对其界面进行了微调
+                                        </p>
+                                        <h4 class="block">2.4.11.20200619</h4>
+                                        <p>
+                                            直方图外观的微调
+                                        </p>
+                                        <h4 class="block">2.4.12.20200619</h4>
+                                        <p>
+                                            修改了世界可视化错误
+                                        </p>
+                                        <h4 class="block">2.5.13.20200619</h4>
+                                        <p>
+                                            增加死亡率，治愈率图表
+                                        </p>
+                                        <h4 class="block">2.6.14.20200620</h4>
+                                        <p>
+                                            改善背景+修改菜单错误
+                                        </p>
+                                        <h4 class="block">2.7.15.20200621</h4>
+                                        <p>
+                                            关于我们界面+民意界面（新闻静态页面）
+                                        </p>
+                                        <h4 class="block">2.8.16.20200621</h4>
+                                        <p>
+                                            更新旭日图和中国疫情地图
+                                        </p>
+                                        <h4 class="block">2.8.17.20200621</h4>
+                                        <p>
+                                            界面优化
+                                        </p>
+                                        <h4 class="block">2.9.18.20200622</h4>
+                                        <p>
+                                            1.整合词云图像并解决加载问题<br>
+                                            2. 更新中国的治愈率图表
+                                            <br>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="portlet box">
+                        <div class="portlet-body">
+                            <div class="portlet light">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class="fa fa-cogs font-red-sunglo"></i>
+                                        <span class="caption-subject font-red-sunglo bold uppercase">
+                                                版本 </span>
+                                    </div>
+                                </div>
+                                <span class="caption-subject font-red-sunglo bold uppercase">
+                                        版本  5</span>
+                                <div class="portlet-body">
+                                    <div class="note note-info">
+                                        <h4 class="block">5.0.0.20200824</h4>
+                                        <p>
+                                            优化前部分端图表的自适应
+                                        </p>
+                                        <h4 class="block">5.0.1.20200825</h4>
+                                        <p>
+                                            前端布局优化
+                                        </p>
+                                        <h4 class="block">5.1.2.20200826</h4>
+                                        <p>
+                                            优化前端界面并对部分加载较慢图表添加加载动画
+                                        </p>
+                                        <h4 class="block">5.2.3.20200827</h4>
+                                        <p>
+                                            将前端分为中/英文界面
+                                        </p>
+                                        <h4 class="block">5.3.4.20200828</h4>
+                                        <p>
+                                            完成所有数据的更新
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- END CONTENT -->
+
+    <!-- END CONTENT -->
+</div>
+<!-- END CONTAINER -->
+<!-- BEGIN FOOTER -->
+<div class="page-footer">
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+        回到页首
+    </div>
+</div>
+
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        Demo.init(); // init demo features
+    });
+</script>
+<!-- END JAVASCRIPTS -->
+<script type="text/javascript" src="../assets/global/scripts/canvas-nest.js"></script>
+<canvas id="c_n1"></canvas>
+</body>
+<!-- END BODY -->
+
+</html>

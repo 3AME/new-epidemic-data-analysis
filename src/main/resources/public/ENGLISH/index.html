@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>epidemic-data-analysis | Home</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet"
+          type="text/css">
+    <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/uniform/css/uniform.default.css" rel="stylesheet" type="text/css">
+    <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css"/>
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN THEME STYLES -->
+    <link href="../assets/global/css/components-rounded.css" id="style_components" rel="stylesheet" type="text/css"/>
+    <link href="../assets/global/css/plugins.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/admin/layout4/css/layout.css" rel="stylesheet" type="text/css"/>
+    <link id="style_color" href="../assets/admin/layout4/css/themes/light.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/admin/layout4/css/custom.css" rel="stylesheet" type="text/css"/>
+    <!-- END THEME STYLES -->
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/world.js"></script>
+    <script type="text/javascript" src="../echart/js/echarts.min.js"></script>
+    <script type="text/javascript" src="../echart/js/echarts-wordcloud.js"></script>
+</head>
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+<!-- BEGIN HEADER -->
+<div style="margin-top: 10px;" class="page-header navbar navbar-fixed-top">
+    <!-- BEGIN HEADER INNER -->
+    <div class="page-header-inner">
+        <!-- BEGIN LOGO -->
+        <div class="page-logo">
+            <a href="index.html" style="font-size: 18px;margin-top: 18px;">
+                <img style="width: 8em;height: 3em;" src="../assets/admin/layout4/icons/logo_1.2.png" alt="logo"
+                     class="logo-default"/>
+            </a>
+            <div class="menu-toggler sidebar-toggler">
+                <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+            </div>
+        </div>
+        <!-- END LOGO -->
+        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+        <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse"
+           data-target=".navbar-collapse">
+        </a>
+        <!-- END RESPONSIVE MENU TOGGLER -->
+        <!-- BEGIN PAGE TOP -->
+        <div class="page-top">
+        </div>
+        <button style="float: right;margin-top: 2%;margin-right: 1%;"><a href="../CH-ZN/index.html">Chinese</a></button>
+        <!-- END TOP NAVIGATION MENU -->
+    </div>
+    <!-- END PAGE TOP -->
+</div>
+<!-- END HEADER INNER -->
+</div>
+<!-- END HEADER -->
+<div class="clearfix">
+</div>
+<!-- BEGIN CONTAINER -->
+<div class="page-container">
+    <!-- BEGIN SIDEBAR -->
+    <div class="page-sidebar-wrapper">
+        <div class="page-sidebar navbar-collapse collapse" style="color: black;margin-top: 50px;">
+            <ul class="page-sidebar-menu " data-keep-expanded="false" data-auto-scroll="true"
+                data-slide-speed="200">
+                <li class="start ">
+                    <a href="index.html">
+                        <!-- <i class="icon-home"></i> -->
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/home.png"/>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="world_epidemic_situation.html"><img style="width: 20px;height: 20px;"
+                                                                 src="../assets/admin/layout4/icons/world.png"/>
+                        <span class="title">World epidemic situation</span> </a>
+                    <!-- <a  href="world_epidemic_situation.html">
+                        World epidemic situation</a> -->
+                </li>
+                <li>
+                    <a href="CHINA.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/中国地图.png"/>
+                        <span class="title">China's epidemic situation </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="US.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/美国 (1).png"/>
+                        <span class="title">U.S. epidemic situation</span></a>
+                </li>
+                <li>
+                    <a href="Analysis_and_forecasting.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/国家（pitch on）.png"/>
+                        <span class="title">Analysis and forecasting</span> </a>
+                </li>
+                <li>
+                    <a href="public_opinion_and_epidemic_situation.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/virus.png"/>
+                        <span class="title">Public opinion</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="version.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/历史.png"/>
+                        <span class="title">Historic versions</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="about_us.html">
+                        <img style="width: 20px;height: 20px;" src="../assets/admin/layout4/icons/about us.png"/>
+                        <span class="title">About us</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- END SIDEBAR MENU -->
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- BEGIN CONTENT -->
+    <div class="page-content-wrapper">
+        <div class="page-content">
+            <div class="modal fade" id="portlet-config" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+            </div>
+            <div class="page-head">
+                <div class="page-title">
+                    <h1>Home <small>Home</small></h1>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="portlet box grey-cascade">
+                        <div class="portlet-body">
+                            <div id="vmap_world" class="Charts"
+                                 style="height: 45em;display: flex;justify-content: center;align-items: center;">
+                                <img style="width:auto;height:auto;max-width:100%;max-height:100%;"
+                                     src="../assets/admin/layout4/img/标题_V1.png">
+                            </div>
+                        </div>
+                        <!-- END WORLD PORTLET-->
+                    </div>
+
+                </div>
+                <div class="col-md-12">
+                    <div class="portlet box grey-cascade">
+                        <div class="portlet-body">
+                            <div id="vmap_world" class="vmaps" style="height: 55em;">
+                                <div id="graph" style="width: 100%; height: 55em;"></div>
+                                <script type="text/javascript"
+                                        src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
+                                <script type="text/javascript">
+                                    (function (config) {
+                                        let rose_sun_chart = echarts.init(document.getElementById("graph"));
+
+                                        /**
+                                         * @params params
+                                         * params.name 标识当前点击的legend
+                                         * params.selected 标识当前选中的legend集合
+                                         */
+                                        rose_sun_chart.on('legendselectchanged', function (params) {
+                                            let rose_sun_options = this.getOption(),
+                                                keys = Object.keys(params.selected), selected = [];
+
+                                            // 获取选中目录的 category 值
+                                            for (let item of keys) {
+                                                if (params.selected[item]) {
+                                                    for (let term of config.level1)
+                                                        if (item == term.name)
+                                                            selected.push(term.category);
+                                                }
+                                            }
+
+                                            // 根据 category 获取 series 中 data 数据项
+                                            rose_sun_options.series[1].data = config.level2.filter(item => {
+                                                return selected.includes(item.category);
+                                            });
+                                            // rose_sun_options.series[2].data = config.level3.filter(item => {
+                                            //     return selected.includes(item.category);
+                                            // });
+
+                                            this.setOption(rose_sun_options);
+                                        });
+
+                                        rose_sun_chart.setOption({
+                                            tooltip: {
+                                                trigger: 'item',
+                                                formatter: "{a} <br/>{b}: {c} ({d}%)"
+                                            },
+                                            legend: {
+                                                orient: 'horizontal',
+                                                x: 'center',
+                                                top: '2%',
+                                                data: ['Americas', 'Europe', 'Eastern Mediterranean', 'Western Pacific', 'South-East Asia', 'Africa']
+                                            },
+                                            // title: {
+                                            //     text: "80%",
+                                            //     left: "center",
+                                            //     top: "48%",
+                                            //     textStyle: {
+                                            //         color: "#27D9C8",
+                                            //         fontSize: 50,
+                                            //         align: "center"
+                                            //     }
+                                            // },
+
+                                            graphic: {
+                                                type: "text",
+                                                left: "center",
+                                                top: "49%",
+                                                style: {
+                                                    text: "Global Outbreak Distribution",
+                                                    textAlign: "center",
+                                                    fill: "#333",
+                                                    fontSize: 11,
+                                                    fontWeight: 700
+                                                }
+                                            },
+                                            series: [
+                                                {
+                                                    name: 'Continent',
+                                                    type: 'pie',
+                                                    label: {
+                                                        normal: {
+                                                            show: true,
+                                                            rotate: true,
+                                                            fontWeight: 'bold',
+                                                            position: 'inner',  //这个配置项是控制文案在扇形里显示，或者在扇形中心显示
+                                                            fontSize: 12
+                                                        }
+                                                    },
+                                                    itemStyle: {
+                                                        normal: {
+                                                            borderwidth: 1,
+                                                            borderColor: '#fff',
+                                                            /**
+                                                             * 自定义饼图 扇形 颜色
+                                                             * @param params
+                                                             */
+                                                            color(params) {
+                                                                return params.data.color;
+                                                            }
+                                                        }
+                                                    },
+                                                    radius: ['30%', '59.5%'],
+                                                    // center: ['50%', '50%'],
+                                                    data: config.level1
+                                                },
+                                                {
+                                                    name: 'countries',
+                                                    type: 'pie',
+                                                    label: {
+                                                        normal: {
+                                                            show: false,
+                                                        }
+                                                    },
+                                                    itemStyle: {
+                                                        borderwidth: 1,
+                                                        borderColor: '#fff',
+                                                        normal: {
+                                                            color(params) {
+                                                                return params.data.color;
+                                                            }
+                                                        }
+                                                    },
+                                                    // center: ['50%', '50%'],
+                                                    radius: ['60%', '80%'],
+                                                    data: config.level2
+                                                },
+                                                // {
+                                                //     name:'三级指标',
+                                                //     type:'pie',
+                                                //     radius: ['65%', '80%'],
+                                                //     itemStyle: {
+                                                //         normal: {
+                                                //             color(params) {
+                                                //                 return params.data.color;
+                                                //             }
+                                                //         }
+                                                //     },
+                                                //     data: config.level3
+                                                // }
+                                            ]
+                                        });
+                                        window.addEventListener("resize", () => {
+                                            rose_sun_chart.resize();
+                                        });
+                                    })({
+                                        "level1": [{"name":"Western Pacific","value":292428,"category":5,"color":"#F07167"},{"name":"Africa","value":723207,"category":4,"color":"#FFA69E"},{"name":"Eastern Mediterranean","value":1490744,"category":3,"color":"#FED9B7"},{"name":"South-East Asia","value":1835297,"category":2,"color":"#AED9E0"},{"name":"Europe","value":3299523,"category":1,"color":"#00AFB9"},{"name":"Americas","value":8839286,"category":0,"color":"#0081A7"}],
+                                        "level2": [{"name":"Laos","value":20,"category":5,"color":"#F07167"},{"name":"Fiji","value":27,"category":5,"color":"#F07167"},{"name":"Papua New Guinea","value":62,"category":5,"color":"#F07167"},{"name":"Brunei","value":141,"category":5,"color":"#F07167"},{"name":"Cambodia","value":226,"category":5,"color":"#F07167"},{"name":"Mongolia","value":289,"category":5,"color":"#F07167"},{"name":"Vietnam","value":431,"category":5,"color":"#F07167"},{"name":"Taiwan*","value":462,"category":5,"color":"#F07167"},{"name":"New Zealand","value":1557,"category":5,"color":"#F07167"},{"name":"Malaysia","value":8904,"category":5,"color":"#F07167"},{"name":"South Korea","value":14203,"category":5,"color":"#F07167"},{"name":"Australia","value":15303,"category":5,"color":"#F07167"},{"name":"Japan","value":31142,"category":5,"color":"#F07167"},{"name":"Singapore","value":50838,"category":5,"color":"#F07167"},{"name":"Philippines","value":82040,"category":5,"color":"#F07167"},{"name":"China","value":86783,"category":5,"color":"#F07167"},{"name":"Western Sahara","value":10,"category":4,"color":"#FFA69E"},{"name":"Seychelles","value":114,"category":4,"color":"#FFA69E"},{"name":"Eritrea","value":265,"category":4,"color":"#FFA69E"},{"name":"Gambia","value":326,"category":4,"color":"#FFA69E"},{"name":"Mauritius","value":344,"category":4,"color":"#FFA69E"},{"name":"Comoros","value":354,"category":4,"color":"#FFA69E"},{"name":"Burundi","value":378,"category":4,"color":"#FFA69E"},{"name":"Lesotho","value":505,"category":4,"color":"#FFA69E"},{"name":"Tanzania","value":509,"category":4,"color":"#FFA69E"},{"name":"Botswana","value":739,"category":4,"color":"#FFA69E"},{"name":"Sao Tome and Principe","value":865,"category":4,"color":"#FFA69E"},{"name":"Togo","value":874,"category":4,"color":"#FFA69E"},{"name":"Chad","value":922,"category":4,"color":"#FFA69E"},{"name":"Angola","value":950,"category":4,"color":"#FFA69E"},{"name":"Burkina Faso","value":1100,"category":4,"color":"#FFA69E"},{"name":"Uganda","value":1128,"category":4,"color":"#FFA69E"},{"name":"Niger","value":1132,"category":4,"color":"#FFA69E"},{"name":"Liberia","value":1167,"category":4,"color":"#FFA69E"},{"name":"Mozambique","value":1701,"category":4,"color":"#FFA69E"},{"name":"Benin","value":1770,"category":4,"color":"#FFA69E"},{"name":"Sierra Leone","value":1783,"category":4,"color":"#FFA69E"},{"name":"Namibia","value":1843,"category":4,"color":"#FFA69E"},{"name":"Rwanda","value":1879,"category":4,"color":"#FFA69E"},{"name":"Guinea-Bissau","value":1954,"category":4,"color":"#FFA69E"},{"name":"South Sudan","value":2305,"category":4,"color":"#FFA69E"},{"name":"Eswatini","value":2316,"category":4,"color":"#FFA69E"},{"name":"Cabo Verde","value":2328,"category":4,"color":"#FFA69E"},{"name":"Mali","value":2513,"category":4,"color":"#FFA69E"},{"name":"Zimbabwe","value":2704,"category":4,"color":"#FFA69E"},{"name":"Equatorial Guinea","value":3071,"category":4,"color":"#FFA69E"},{"name":"Congo (Brazzaville)","value":3200,"category":4,"color":"#FFA69E"},{"name":"Malawi","value":3664,"category":4,"color":"#FFA69E"},{"name":"Zambia","value":4552,"category":4,"color":"#FFA69E"},{"name":"Central African Republic","value":4599,"category":4,"color":"#FFA69E"},{"name":"Mauritania","value":6208,"category":4,"color":"#FFA69E"},{"name":"Guinea","value":7055,"category":4,"color":"#FFA69E"},{"name":"Gabon","value":7189,"category":4,"color":"#FFA69E"},{"name":"Congo (Kinshasa)","value":8844,"category":4,"color":"#FFA69E"},{"name":"Madagascar","value":9690,"category":4,"color":"#FFA69E"},{"name":"Senegal","value":9764,"category":4,"color":"#FFA69E"},{"name":"Ethiopia","value":14547,"category":4,"color":"#FFA69E"},{"name":"Cote d'Ivoire","value":15655,"category":4,"color":"#FFA69E"},{"name":"Cameroon","value":17110,"category":4,"color":"#FFA69E"},{"name":"Kenya","value":17975,"category":4,"color":"#FFA69E"},{"name":"Algeria","value":27973,"category":4,"color":"#FFA69E"},{"name":"Ghana","value":33624,"category":4,"color":"#FFA69E"},{"name":"Nigeria","value":41180,"category":4,"color":"#FFA69E"},{"name":"South Africa","value":452529,"category":4,"color":"#FFA69E"},{"name":"Syria","value":674,"category":3,"color":"#FED9B7"},{"name":"Jordan","value":1176,"category":3,"color":"#FED9B7"},{"name":"Tunisia","value":1455,"category":3,"color":"#FED9B7"},{"name":"Yemen","value":1691,"category":3,"color":"#FED9B7"},{"name":"Libya","value":2827,"category":3,"color":"#FED9B7"},{"name":"Somalia","value":3196,"category":3,"color":"#FED9B7"},{"name":"Lebanon","value":3882,"category":3,"color":"#FED9B7"},{"name":"Djibouti","value":5059,"category":3,"color":"#FED9B7"},{"name":"West Bank and Gaza","value":10621,"category":3,"color":"#FED9B7"},{"name":"Sudan","value":11424,"category":3,"color":"#FED9B7"},{"name":"Morocco","value":20887,"category":3,"color":"#FED9B7"},{"name":"Afghanistan","value":36263,"category":3,"color":"#FED9B7"},{"name":"Bahrain","value":39482,"category":3,"color":"#FED9B7"},{"name":"United Arab Emirates","value":59177,"category":3,"color":"#FED9B7"},{"name":"Kuwait","value":64379,"category":3,"color":"#FED9B7"},{"name":"Oman","value":77058,"category":3,"color":"#FED9B7"},{"name":"Egypt","value":92482,"category":3,"color":"#FED9B7"},{"name":"Qatar","value":109597,"category":3,"color":"#FED9B7"},{"name":"Iraq","value":112585,"category":3,"color":"#FED9B7"},{"name":"Saudi Arabia","value":268934,"category":3,"color":"#FED9B7"},{"name":"Pakistan","value":274289,"category":3,"color":"#FED9B7"},{"name":"Iran","value":293606,"category":3,"color":"#FED9B7"},{"name":"Timor-Leste","value":24,"category":2,"color":"#AED9E0"},{"name":"Bhutan","value":99,"category":2,"color":"#AED9E0"},{"name":"Burma","value":350,"category":2,"color":"#AED9E0"},{"name":"Sri Lanka","value":2805,"category":2,"color":"#AED9E0"},{"name":"Thailand","value":3297,"category":2,"color":"#AED9E0"},{"name":"Maldives","value":3369,"category":2,"color":"#AED9E0"},{"name":"Nepal","value":18752,"category":2,"color":"#AED9E0"},{"name":"Indonesia","value":100303,"category":2,"color":"#AED9E0"},{"name":"Bangladesh","value":226225,"category":2,"color":"#AED9E0"},{"name":"India","value":1480073,"category":2,"color":"#AED9E0"},{"name":"Holy See","value":12,"category":1,"color":"#00AFB9"},{"name":"Greenland","value":14,"category":1,"color":"#00AFB9"},{"name":"Liechtenstein","value":86,"category":1,"color":"#00AFB9"},{"name":"Monaco","value":116,"category":1,"color":"#00AFB9"},{"name":"San Marino","value":699,"category":1,"color":"#00AFB9"},{"name":"Malta","value":701,"category":1,"color":"#00AFB9"},{"name":"Andorra","value":907,"category":1,"color":"#00AFB9"},{"name":"Cyprus","value":1060,"category":1,"color":"#00AFB9"},{"name":"Georgia","value":1137,"category":1,"color":"#00AFB9"},{"name":"Latvia","value":1219,"category":1,"color":"#00AFB9"},{"name":"Iceland","value":1854,"category":1,"color":"#00AFB9"},{"name":"Lithuania","value":2019,"category":1,"color":"#00AFB9"},{"name":"Estonia","value":2034,"category":1,"color":"#00AFB9"},{"name":"Slovenia","value":2087,"category":1,"color":"#00AFB9"},{"name":"Slovakia","value":2181,"category":1,"color":"#00AFB9"},{"name":"Montenegro","value":2893,"category":1,"color":"#00AFB9"},{"name":"Greece","value":4227,"category":1,"color":"#00AFB9"},{"name":"Hungary","value":4448,"category":1,"color":"#00AFB9"},{"name":"Albania","value":4880,"category":1,"color":"#00AFB9"},{"name":"Croatia","value":4881,"category":1,"color":"#00AFB9"},{"name":"Luxembourg","value":6321,"category":1,"color":"#00AFB9"},{"name":"Tajikistan","value":7235,"category":1,"color":"#00AFB9"},{"name":"Finland","value":7398,"category":1,"color":"#00AFB9"},{"name":"Kosovo","value":7413,"category":1,"color":"#00AFB9"},{"name":"Norway","value":9132,"category":1,"color":"#00AFB9"},{"name":"North Macedonia","value":10213,"category":1,"color":"#00AFB9"},{"name":"Bosnia and Herzegovina","value":10498,"category":1,"color":"#00AFB9"},{"name":"Bulgaria","value":10621,"category":1,"color":"#00AFB9"},{"name":"Denmark","value":13761,"category":1,"color":"#00AFB9"},{"name":"Czechia","value":15516,"category":1,"color":"#00AFB9"},{"name":"Austria","value":20558,"category":1,"color":"#00AFB9"},{"name":"Uzbekistan","value":21209,"category":1,"color":"#00AFB9"},{"name":"Moldova","value":23154,"category":1,"color":"#00AFB9"},{"name":"Serbia","value":24141,"category":1,"color":"#00AFB9"},{"name":"Ireland","value":25892,"category":1,"color":"#00AFB9"},{"name":"Azerbaijan","value":30446,"category":1,"color":"#00AFB9"},{"name":"Kyrgyzstan","value":33296,"category":1,"color":"#00AFB9"},{"name":"Switzerland","value":34477,"category":1,"color":"#00AFB9"},{"name":"Armenia","value":37390,"category":1,"color":"#00AFB9"},{"name":"Poland","value":43402,"category":1,"color":"#00AFB9"},{"name":"Romania","value":45902,"category":1,"color":"#00AFB9"},{"name":"Portugal","value":50299,"category":1,"color":"#00AFB9"},{"name":"Netherlands","value":53413,"category":1,"color":"#00AFB9"},{"name":"Israel","value":63985,"category":1,"color":"#00AFB9"},{"name":"Belgium","value":66428,"category":1,"color":"#00AFB9"},{"name":"Ukraine","value":67096,"category":1,"color":"#00AFB9"},{"name":"Belarus","value":67251,"category":1,"color":"#00AFB9"},{"name":"Sweden","value":79395,"category":1,"color":"#00AFB9"},{"name":"Kazakhstan","value":84648,"category":1,"color":"#00AFB9"},{"name":"Germany","value":207112,"category":1,"color":"#00AFB9"},{"name":"France","value":220352,"category":1,"color":"#00AFB9"},{"name":"Turkey","value":227019,"category":1,"color":"#00AFB9"},{"name":"Italy","value":246286,"category":1,"color":"#00AFB9"},{"name":"Spain","value":272421,"category":1,"color":"#00AFB9"},{"name":"United Kingdom","value":301708,"category":1,"color":"#00AFB9"},{"name":"Russia","value":816680,"category":1,"color":"#00AFB9"},{"name":"Saint Kitts and Nevis","value":17,"category":0,"color":"#0081A7"},{"name":"Dominica","value":18,"category":0,"color":"#0081A7"},{"name":"Grenada","value":23,"category":0,"color":"#0081A7"},{"name":"Saint Lucia","value":24,"category":0,"color":"#0081A7"},{"name":"Belize","value":48,"category":0,"color":"#0081A7"},{"name":"Saint Vincent and the Grenadines","value":52,"category":0,"color":"#0081A7"},{"name":"Antigua and Barbuda","value":86,"category":0,"color":"#0081A7"},{"name":"Barbados","value":110,"category":0,"color":"#0081A7"},{"name":"Trinidad and Tobago","value":148,"category":0,"color":"#0081A7"},{"name":"Bahamas","value":382,"category":0,"color":"#0081A7"},{"name":"Guyana","value":389,"category":0,"color":"#0081A7"},{"name":"Jamaica","value":853,"category":0,"color":"#0081A7"},{"name":"Uruguay","value":1202,"category":0,"color":"#0081A7"},{"name":"Suriname","value":1483,"category":0,"color":"#0081A7"},{"name":"Cuba","value":2532,"category":0,"color":"#0081A7"},{"name":"Nicaragua","value":3439,"category":0,"color":"#0081A7"},{"name":"Paraguay","value":4548,"category":0,"color":"#0081A7"},{"name":"Haiti","value":7340,"category":0,"color":"#0081A7"},{"name":"El Salvador","value":15035,"category":0,"color":"#0081A7"},{"name":"Costa Rica","value":15841,"category":0,"color":"#0081A7"},{"name":"Venezuela","value":15988,"category":0,"color":"#0081A7"},{"name":"Honduras","value":39741,"category":0,"color":"#0081A7"},{"name":"Guatemala","value":45309,"category":0,"color":"#0081A7"},{"name":"Panama","value":61442,"category":0,"color":"#0081A7"},{"name":"Dominican Republic","value":64156,"category":0,"color":"#0081A7"},{"name":"Bolivia","value":71181,"category":0,"color":"#0081A7"},{"name":"Ecuador","value":81161,"category":0,"color":"#0081A7"},{"name":"Canada","value":116458,"category":0,"color":"#0081A7"},{"name":"Argentina","value":167416,"category":0,"color":"#0081A7"},{"name":"Colombia","value":257101,"category":0,"color":"#0081A7"},{"name":"Chile","value":347923,"category":0,"color":"#0081A7"},{"name":"Peru","value":389717,"category":0,"color":"#0081A7"},{"name":"Mexico","value":395489,"category":0,"color":"#0081A7"},{"name":"Brazil","value":2442375,"category":0,"color":"#0081A7"},{"name":"US","value":4290259,"category":0,"color":"#0081A7"}]
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- END PAGE CONTENT-->
+            </div>
+        </div>
+        <!-- END CONTENT -->
+    </div>
+    <!-- END CONTAINER -->
+    <!-- BEGIN FOOTER -->
+    <div class="page-footer navbar-fixed-bottom">
+        <div class="scroll-to-top">
+            <i class="icon-arrow-up"></i>
+            Back to top
+        </div>
+    </div>
+</div>
+
+
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"
+        type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery.cokie.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/uniform/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<script src="../assets/global/scripts/metronic.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+<script src="../assets/admin/layout4/scripts/demo.js" type="text/javascript"></script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core components
+        Layout.init(); // init current layout
+        Demo.init(); // init demo features
+    });
+</script>
+<!-- END JAVASCRIPTS -->
+<script type="text/javascript" src="../assets/global/scripts/canvas-nest.js"></script>
+<canvas id="c_n1"></canvas>
+</body>
+<!-- END BODY -->
+
+</html>
